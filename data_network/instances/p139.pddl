@@ -1,23 +1,20 @@
-(define (problem p6-2-8-prob-6-2-8-tiny-network-None-None)
+(define (problem p4-2-6-prob-4-2-6-small-network-2-2)
     (:domain data-network)
     (:objects
               data-0-1
               data-0-3
-              data-0-4
-              data-0-5
               data-1-2
-              data-1-6 - data
+              data-1-4 - data
               script1
               script2
               script3
               script4
               script5
-              script6
-              script7
-              script8 - script
+              script6 - script
               server1
               server2
-              server3 - server
+              server3
+              server4 - server
               number0
               number1
               number2
@@ -37,27 +34,28 @@
               number16 - numbers
     )
     (:init
-           (SCRIPT-IO script1 data-0-4 data-0-5 data-1-2)
-           (SCRIPT-IO script2 data-0-5 data-0-4 data-1-6)
-           (SCRIPT-IO script3 data-0-5 data-0-3 data-1-2)
-           (SCRIPT-IO script4 data-0-5 data-0-4 data-1-6)
-           (SCRIPT-IO script5 data-0-1 data-0-4 data-1-6)
-           (SCRIPT-IO script6 data-0-1 data-0-5 data-1-6)
-           (SCRIPT-IO script7 data-0-4 data-0-5 data-1-2)
-           (SCRIPT-IO script8 data-0-4 data-0-5 data-1-2)
+           (SCRIPT-IO script1 data-0-1 data-0-3 data-1-2)
+           (SCRIPT-IO script2 data-0-1 data-0-3 data-1-4)
+           (SCRIPT-IO script3 data-0-3 data-0-1 data-1-4)
+           (SCRIPT-IO script4 data-0-1 data-0-3 data-1-2)
+           (SCRIPT-IO script5 data-0-3 data-0-1 data-1-4)
+           (SCRIPT-IO script6 data-0-1 data-0-3 data-1-2)
            (CONNECTED server1 server2)
            (CONNECTED server2 server1)
            (CONNECTED server1 server3)
            (CONNECTED server3 server1)
-           (DATA-SIZE data-0-1 number3)
-           (DATA-SIZE data-0-3 number1)
-           (DATA-SIZE data-0-4 number4)
-           (DATA-SIZE data-0-5 number4)
-           (DATA-SIZE data-1-2 number3)
-           (DATA-SIZE data-1-6 number3)
+           (CONNECTED server1 server4)
+           (CONNECTED server4 server1)
+           (CONNECTED server2 server3)
+           (CONNECTED server3 server2)
+           (DATA-SIZE data-0-1 number1)
+           (DATA-SIZE data-0-3 number4)
+           (DATA-SIZE data-1-2 number1)
+           (DATA-SIZE data-1-4 number3)
            (CAPACITY server1 number16)
            (CAPACITY server2 number8)
            (CAPACITY server3 number8)
+           (CAPACITY server4 number8)
            (SUM number0 number1 number1)
            (SUM number0 number3 number3)
            (SUM number0 number4 number4)
@@ -126,30 +124,30 @@
            (LESS-EQUAL number15 number16)
            (LESS-EQUAL number16 number16)
            (= (total-cost) 0)
-           (= (process-cost script1 server1) 17)
-           (= (process-cost script1 server2) 7)
-           (= (process-cost script1 server3) 11)
-           (= (process-cost script2 server1) 16)
+           (= (process-cost script1 server1) 16)
+           (= (process-cost script1 server2) 9)
+           (= (process-cost script1 server3) 7)
+           (= (process-cost script1 server4) 12)
+           (= (process-cost script2 server1) 23)
            (= (process-cost script2 server2) 9)
-           (= (process-cost script2 server3) 6)
-           (= (process-cost script3 server1) 22)
-           (= (process-cost script3 server2) 8)
-           (= (process-cost script3 server3) 12)
-           (= (process-cost script4 server1) 20)
+           (= (process-cost script2 server3) 10)
+           (= (process-cost script2 server4) 13)
+           (= (process-cost script3 server1) 11)
+           (= (process-cost script3 server2) 15)
+           (= (process-cost script3 server3) 8)
+           (= (process-cost script3 server4) 10)
+           (= (process-cost script4 server1) 24)
            (= (process-cost script4 server2) 9)
-           (= (process-cost script4 server3) 7)
-           (= (process-cost script5 server1) 17)
-           (= (process-cost script5 server2) 6)
-           (= (process-cost script5 server3) 6)
-           (= (process-cost script6 server1) 16)
-           (= (process-cost script6 server2) 9)
-           (= (process-cost script6 server3) 9)
-           (= (process-cost script7 server1) 18)
-           (= (process-cost script7 server2) 8)
-           (= (process-cost script7 server3) 6)
-           (= (process-cost script8 server1) 15)
-           (= (process-cost script8 server2) 7)
-           (= (process-cost script8 server3) 8)
+           (= (process-cost script4 server3) 5)
+           (= (process-cost script4 server4) 9)
+           (= (process-cost script5 server1) 15)
+           (= (process-cost script5 server2) 11)
+           (= (process-cost script5 server3) 12)
+           (= (process-cost script5 server4) 6)
+           (= (process-cost script6 server1) 15)
+           (= (process-cost script6 server2) 8)
+           (= (process-cost script6 server3) 11)
+           (= (process-cost script6 server4) 10)
            (= (send-cost server1 server2 number1) 4)
            (= (send-cost server2 server1 number1) 4)
            (= (send-cost server1 server2 number3) 12)
@@ -162,6 +160,18 @@
            (= (send-cost server3 server1 number3) 18)
            (= (send-cost server1 server3 number4) 24)
            (= (send-cost server3 server1 number4) 24)
+           (= (send-cost server1 server4 number1) 6)
+           (= (send-cost server4 server1 number1) 6)
+           (= (send-cost server1 server4 number3) 18)
+           (= (send-cost server4 server1 number3) 18)
+           (= (send-cost server1 server4 number4) 24)
+           (= (send-cost server4 server1 number4) 24)
+           (= (send-cost server2 server3 number1) 2)
+           (= (send-cost server3 server2 number1) 2)
+           (= (send-cost server2 server3 number3) 6)
+           (= (send-cost server3 server2 number3) 6)
+           (= (send-cost server2 server3 number4) 8)
+           (= (send-cost server3 server2 number4) 8)
            (= (io-cost server1 number1) 5)
            (= (io-cost server1 number3) 15)
            (= (io-cost server1 number4) 20)
@@ -171,18 +181,20 @@
            (= (io-cost server3 number1) 1)
            (= (io-cost server3 number3) 3)
            (= (io-cost server3 number4) 4)
+           (= (io-cost server4 number1) 1)
+           (= (io-cost server4 number3) 3)
+           (= (io-cost server4 number4) 4)
            (saved data-0-1 server1)
-           (saved data-0-3 server1)
-           (saved data-0-4 server3)
-           (saved data-0-5 server2)
+           (saved data-0-3 server3)
            (usage server1 number0)
            (usage server2 number0)
            (usage server3 number0)
+           (usage server4 number0)
     )
     (:goal
            (and
-                (saved data-1-2 server1)
-                (saved data-1-6 server3)
+                (saved data-1-2 server3)
+                (saved data-1-4 server1)
            )
     )
     (:metric minimize (total-cost))

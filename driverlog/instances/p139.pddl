@@ -1,11 +1,8 @@
-(define (problem DLOG-2-3-10)
+(define (problem DLOG-1-1-23)
 	(:domain driverlog)
 	(:objects
 	driver1
-	driver2
 	truck1
-	truck2
-	truck3
 	package1
 	package2
 	package3
@@ -16,6 +13,19 @@
 	package8
 	package9
 	package10
+	package11
+	package12
+	package13
+	package14
+	package15
+	package16
+	package17
+	package18
+	package19
+	package20
+	package21
+	package22
+	package23
 	s0
 	s1
 	s2
@@ -59,37 +69,55 @@
 	(:init
 	(at driver1 s12)
 	(DRIVER driver1)
-	(at driver2 s12)
-	(DRIVER driver2)
-	(at truck1 s2)
+	(at truck1 s12)
 	(empty truck1)
 	(TRUCK truck1)
-	(at truck2 s11)
-	(empty truck2)
-	(TRUCK truck2)
-	(at truck3 s8)
-	(empty truck3)
-	(TRUCK truck3)
-	(at package1 s1)
+	(at package1 s2)
 	(OBJ package1)
-	(at package2 s4)
+	(at package2 s11)
 	(OBJ package2)
-	(at package3 s12)
+	(at package3 s8)
 	(OBJ package3)
-	(at package4 s0)
+	(at package4 s1)
 	(OBJ package4)
-	(at package5 s12)
+	(at package5 s4)
 	(OBJ package5)
-	(at package6 s13)
+	(at package6 s12)
 	(OBJ package6)
-	(at package7 s13)
+	(at package7 s0)
 	(OBJ package7)
-	(at package8 s2)
+	(at package8 s12)
 	(OBJ package8)
-	(at package9 s1)
+	(at package9 s13)
 	(OBJ package9)
-	(at package10 s8)
+	(at package10 s13)
 	(OBJ package10)
+	(at package11 s2)
+	(OBJ package11)
+	(at package12 s1)
+	(OBJ package12)
+	(at package13 s8)
+	(OBJ package13)
+	(at package14 s4)
+	(OBJ package14)
+	(at package15 s1)
+	(OBJ package15)
+	(at package16 s9)
+	(OBJ package16)
+	(at package17 s3)
+	(OBJ package17)
+	(at package18 s1)
+	(OBJ package18)
+	(at package19 s13)
+	(OBJ package19)
+	(at package20 s11)
+	(OBJ package20)
+	(at package21 s4)
+	(OBJ package21)
+	(at package22 s3)
+	(OBJ package22)
+	(at package23 s6)
+	(OBJ package23)
 	(LOCATION s0)
 	(LOCATION s1)
 	(LOCATION s2)
@@ -305,19 +333,28 @@
 	(link s12 s13)
 )
 	(:goal (and
-	(at truck1 s5)
-	(at truck2 s5)
-	(at truck3 s6)
-	(at package1 s7)
-	(at package2 s13)
-	(at package3 s10)
-	(at package4 s10)
-	(at package5 s12)
+	(at package1 s5)
+	(at package2 s5)
+	(at package3 s6)
+	(at package4 s7)
+	(at package5 s13)
 	(at package6 s10)
-	(at package7 s9)
-	(at package8 s11)
-	(at package9 s9)
-	(at package10 s3)
+	(at package7 s10)
+	(at package8 s12)
+	(at package9 s10)
+	(at package10 s9)
+	(at package11 s11)
+	(at package12 s9)
+	(at package13 s3)
+	(at package14 s4)
+	(at package15 s8)
+	(at package16 s7)
+	(at package17 s7)
+	(at package18 s6)
+	(at package19 s6)
+	(at package21 s8)
+	(at package22 s9)
+	(at package23 s4)
 	))
 
 

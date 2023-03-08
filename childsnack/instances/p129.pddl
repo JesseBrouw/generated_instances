@@ -1,16 +1,16 @@
-; child-snack task with 9 children and 0.4 gluten factor 
-; constant factor of 2.0
-; random seed: 1
+; child-snack task with 12 children and 0.8 gluten factor 
+; constant factor of 1.0
+; random seed: 10
 
 (define (problem prob-snack)
   (:domain child-snack)
   (:objects
-    child1 child2 child3 child4 child5 child6 child7 child8 child9 - child
-    bread1 bread2 bread3 bread4 bread5 bread6 bread7 bread8 bread9 - bread-portion
-    content1 content2 content3 content4 content5 content6 content7 content8 content9 - content-portion
+    child1 child2 child3 child4 child5 child6 child7 child8 child9 child10 child11 child12 - child
+    bread1 bread2 bread3 bread4 bread5 bread6 bread7 bread8 bread9 bread10 bread11 bread12 - bread-portion
+    content1 content2 content3 content4 content5 content6 content7 content8 content9 content10 content11 content12 - content-portion
     tray1 tray2 - tray
     table1 table2 table3 - place
-    sandw1 sandw2 sandw3 sandw4 sandw5 sandw6 sandw7 sandw8 sandw9 sandw10 sandw11 sandw12 sandw13 sandw14 sandw15 sandw16 sandw17 sandw18 - sandwich
+    sandw1 sandw2 sandw3 sandw4 sandw5 sandw6 sandw7 sandw8 sandw9 sandw10 sandw11 sandw12 - sandwich
   )
   (:init
      (at tray1 kitchen)
@@ -24,6 +24,9 @@
      (at_kitchen_bread bread7)
      (at_kitchen_bread bread8)
      (at_kitchen_bread bread9)
+     (at_kitchen_bread bread10)
+     (at_kitchen_bread bread11)
+     (at_kitchen_bread bread12)
      (at_kitchen_content content1)
      (at_kitchen_content content2)
      (at_kitchen_content content3)
@@ -33,30 +36,51 @@
      (at_kitchen_content content7)
      (at_kitchen_content content8)
      (at_kitchen_content content9)
-     (no_gluten_bread bread3)
+     (at_kitchen_content content10)
+     (at_kitchen_content content11)
+     (at_kitchen_content content12)
+     (no_gluten_bread bread10)
+     (no_gluten_bread bread1)
+     (no_gluten_bread bread7)
+     (no_gluten_bread bread8)
+     (no_gluten_bread bread11)
      (no_gluten_bread bread2)
-     (no_gluten_bread bread9)
-     (no_gluten_content content2)
+     (no_gluten_bread bread4)
+     (no_gluten_bread bread6)
+     (no_gluten_bread bread3)
+     (no_gluten_content content11)
+     (no_gluten_content content3)
+     (no_gluten_content content1)
+     (no_gluten_content content9)
      (no_gluten_content content8)
+     (no_gluten_content content12)
+     (no_gluten_content content10)
+     (no_gluten_content content2)
      (no_gluten_content content7)
+     (allergic_gluten child4)
+     (allergic_gluten child10)
      (allergic_gluten child9)
      (allergic_gluten child8)
+     (allergic_gluten child7)
+     (allergic_gluten child3)
+     (allergic_gluten child11)
+     (allergic_gluten child1)
      (allergic_gluten child6)
-     (not_allergic_gluten child5)
-     (not_allergic_gluten child4)
-     (not_allergic_gluten child3)
+     (not_allergic_gluten child12)
      (not_allergic_gluten child2)
-     (not_allergic_gluten child1)
-     (not_allergic_gluten child7)
-     (waiting child1 table2)
-     (waiting child2 table1)
-     (waiting child3 table1)
-     (waiting child4 table2)
-     (waiting child5 table1)
-     (waiting child6 table2)
+     (not_allergic_gluten child5)
+     (waiting child1 table1)
+     (waiting child2 table3)
+     (waiting child3 table2)
+     (waiting child4 table3)
+     (waiting child5 table2)
+     (waiting child6 table1)
      (waiting child7 table2)
-     (waiting child8 table3)
-     (waiting child9 table1)
+     (waiting child8 table1)
+     (waiting child9 table2)
+     (waiting child10 table3)
+     (waiting child11 table2)
+     (waiting child12 table1)
      (notexist sandw1)
      (notexist sandw2)
      (notexist sandw3)
@@ -69,12 +93,6 @@
      (notexist sandw10)
      (notexist sandw11)
      (notexist sandw12)
-     (notexist sandw13)
-     (notexist sandw14)
-     (notexist sandw15)
-     (notexist sandw16)
-     (notexist sandw17)
-     (notexist sandw18)
   )
   (:goal
     (and
@@ -87,6 +105,9 @@
      (served child7)
      (served child8)
      (served child9)
+     (served child10)
+     (served child11)
+     (served child12)
     )
   )
 )

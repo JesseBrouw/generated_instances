@@ -1,10 +1,8 @@
-(define (problem DLOG-2-2-14)
+(define (problem DLOG-1-1-13)
 	(:domain driverlog)
 	(:objects
 	driver1
-	driver2
 	truck1
-	truck2
 	package1
 	package2
 	package3
@@ -18,7 +16,6 @@
 	package11
 	package12
 	package13
-	package14
 	s0
 	s1
 	s2
@@ -52,42 +49,35 @@
 	(:init
 	(at driver1 s1)
 	(DRIVER driver1)
-	(at driver2 s8)
-	(DRIVER driver2)
-	(at truck1 s0)
+	(at truck1 s8)
 	(empty truck1)
 	(TRUCK truck1)
-	(at truck2 s5)
-	(empty truck2)
-	(TRUCK truck2)
-	(at package1 s8)
+	(at package1 s0)
 	(OBJ package1)
-	(at package2 s10)
+	(at package2 s5)
 	(OBJ package2)
-	(at package3 s1)
+	(at package3 s8)
 	(OBJ package3)
-	(at package4 s0)
+	(at package4 s10)
 	(OBJ package4)
-	(at package5 s5)
+	(at package5 s1)
 	(OBJ package5)
-	(at package6 s8)
+	(at package6 s0)
 	(OBJ package6)
-	(at package7 s10)
+	(at package7 s5)
 	(OBJ package7)
-	(at package8 s1)
+	(at package8 s8)
 	(OBJ package8)
-	(at package9 s9)
+	(at package9 s10)
 	(OBJ package9)
-	(at package10 s10)
+	(at package10 s1)
 	(OBJ package10)
-	(at package11 s1)
+	(at package11 s9)
 	(OBJ package11)
-	(at package12 s9)
+	(at package12 s10)
 	(OBJ package12)
-	(at package13 s6)
+	(at package13 s1)
 	(OBJ package13)
-	(at package14 s1)
-	(OBJ package14)
 	(LOCATION s0)
 	(LOCATION s1)
 	(LOCATION s2)
@@ -247,20 +237,19 @@
 	(link s6 s10)
 )
 	(:goal (and
-	(at driver2 s1)
-	(at package1 s8)
-	(at package2 s7)
-	(at package3 s1)
-	(at package4 s0)
-	(at package5 s9)
+	(at truck1 s1)
+	(at package1 s10)
+	(at package2 s1)
+	(at package3 s8)
+	(at package4 s7)
+	(at package5 s1)
 	(at package6 s0)
-	(at package7 s2)
-	(at package8 s10)
-	(at package10 s6)
-	(at package11 s4)
-	(at package12 s3)
+	(at package7 s9)
+	(at package8 s0)
+	(at package9 s2)
+	(at package10 s10)
+	(at package12 s6)
 	(at package13 s4)
-	(at package14 s5)
 	))
 
 

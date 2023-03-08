@@ -1,208 +1,415 @@
 usage: generator.py [-h] [--seed SEED] <data> <layers> <scripts> <module>
-p0.pddl, 4, 2, 6, ring-network
-p1.pddl, 6, 2, 8, ring-network
-p2.pddl, 6, 2, 11, ring-network
-p3.pddl, 8, 2, 10, ring-network
-p4.pddl, 8, 2, 14, ring-network
-p5.pddl, 10, 2, 12, ring-network
-p6.pddl, 10, 2, 17, ring-network
-p7.pddl, 12, 2, 14, ring-network
-p8.pddl, 12, 2, 20, ring-network
-p9.pddl, 14, 2, 16, ring-network
-p10.pddl, 14, 2, 23, ring-network
-p11.pddl, 16, 2, 18, ring-network
-p12.pddl, 16, 2, 26, ring-network
-p13.pddl, 18, 2, 20, ring-network
-p14.pddl, 18, 2, 29, ring-network
-p15.pddl, 5, 3, 7, ring-network
-p16.pddl, 5, 3, 9, ring-network
-p17.pddl, 8, 3, 10, ring-network
-p18.pddl, 8, 3, 14, ring-network
-p19.pddl, 11, 3, 13, ring-network
-p20.pddl, 11, 3, 18, ring-network
-p21.pddl, 14, 3, 16, ring-network
-p22.pddl, 14, 3, 23, ring-network
-p23.pddl, 17, 3, 19, ring-network
-p24.pddl, 17, 3, 27, ring-network
-p25.pddl, 20, 3, 22, ring-network
-p26.pddl, 20, 3, 32, ring-network
-p27.pddl, 23, 3, 25, ring-network
-p28.pddl, 23, 3, 36, ring-network
-p29.pddl, 26, 3, 28, ring-network
-p30.pddl, 26, 3, 41, ring-network
-p31.pddl, 29, 3, 31, ring-network
-p32.pddl, 29, 3, 45, ring-network
-p33.pddl, 6, 4, 8, ring-network
-p34.pddl, 6, 4, 11, ring-network
-p35.pddl, 10, 4, 12, ring-network
-p36.pddl, 10, 4, 17, ring-network
-p37.pddl, 14, 4, 16, ring-network
-p38.pddl, 14, 4, 23, ring-network
-p39.pddl, 18, 4, 20, ring-network
-p40.pddl, 18, 4, 29, ring-network
-p41.pddl, 22, 4, 24, ring-network
-p42.pddl, 22, 4, 35, ring-network
-p43.pddl, 26, 4, 28, ring-network
-p44.pddl, 26, 4, 41, ring-network
-p45.pddl, 30, 4, 32, ring-network
-p46.pddl, 30, 4, 47, ring-network
-p47.pddl, 34, 4, 36, ring-network
-p48.pddl, 34, 4, 53, ring-network
-p49.pddl, 38, 4, 40, ring-network
-p50.pddl, 38, 4, 59, ring-network
-p51.pddl, 7, 5, 9, ring-network
-p52.pddl, 7, 5, 12, ring-network
-p53.pddl, 12, 5, 14, ring-network
-p54.pddl, 12, 5, 20, ring-network
-p55.pddl, 17, 5, 19, ring-network
-p56.pddl, 17, 5, 27, ring-network
-p57.pddl, 22, 5, 24, ring-network
-p58.pddl, 22, 5, 35, ring-network
-p59.pddl, 27, 5, 29, ring-network
-p60.pddl, 27, 5, 42, ring-network
-p61.pddl, 32, 5, 34, ring-network
-p62.pddl, 32, 5, 50, ring-network
-p63.pddl, 37, 5, 39, ring-network
-p64.pddl, 37, 5, 57, ring-network
-p65.pddl, 42, 5, 44, ring-network
-p66.pddl, 42, 5, 65, ring-network
-p67.pddl, 47, 5, 49, ring-network
-p68.pddl, 47, 5, 72, ring-network
-p69.pddl, 4, 2, 6, small-network
-p70.pddl, 6, 2, 8, small-network
-p71.pddl, 6, 2, 11, small-network
-p72.pddl, 8, 2, 10, small-network
-p73.pddl, 8, 2, 14, small-network
-p74.pddl, 10, 2, 12, small-network
-p75.pddl, 10, 2, 17, small-network
-p76.pddl, 12, 2, 14, small-network
-p77.pddl, 12, 2, 20, small-network
-p78.pddl, 14, 2, 16, small-network
-p79.pddl, 14, 2, 23, small-network
-p80.pddl, 16, 2, 18, small-network
-p81.pddl, 16, 2, 26, small-network
-p82.pddl, 18, 2, 20, small-network
-p83.pddl, 18, 2, 29, small-network
-p84.pddl, 5, 3, 7, small-network
-p85.pddl, 5, 3, 9, small-network
-p86.pddl, 8, 3, 10, small-network
-p87.pddl, 8, 3, 14, small-network
-p88.pddl, 11, 3, 13, small-network
-p89.pddl, 11, 3, 18, small-network
-p90.pddl, 14, 3, 16, small-network
-p91.pddl, 14, 3, 23, small-network
-p92.pddl, 17, 3, 19, small-network
-p93.pddl, 17, 3, 27, small-network
-p94.pddl, 20, 3, 22, small-network
-p95.pddl, 20, 3, 32, small-network
-p96.pddl, 23, 3, 25, small-network
-p97.pddl, 23, 3, 36, small-network
-p98.pddl, 26, 3, 28, small-network
-p99.pddl, 26, 3, 41, small-network
-p100.pddl, 29, 3, 31, small-network
-p101.pddl, 29, 3, 45, small-network
-p102.pddl, 6, 4, 8, small-network
-p103.pddl, 6, 4, 11, small-network
-p104.pddl, 10, 4, 12, small-network
-p105.pddl, 10, 4, 17, small-network
-p106.pddl, 14, 4, 16, small-network
-p107.pddl, 14, 4, 23, small-network
-p108.pddl, 18, 4, 20, small-network
-p109.pddl, 18, 4, 29, small-network
-p110.pddl, 22, 4, 24, small-network
-p111.pddl, 22, 4, 35, small-network
-p112.pddl, 26, 4, 28, small-network
-p113.pddl, 26, 4, 41, small-network
-p114.pddl, 30, 4, 32, small-network
-p115.pddl, 30, 4, 47, small-network
-p116.pddl, 34, 4, 36, small-network
-p117.pddl, 34, 4, 53, small-network
-p118.pddl, 38, 4, 40, small-network
-p119.pddl, 38, 4, 59, small-network
-p120.pddl, 7, 5, 9, small-network
-p121.pddl, 7, 5, 12, small-network
-p122.pddl, 12, 5, 14, small-network
-p123.pddl, 12, 5, 20, small-network
-p124.pddl, 17, 5, 19, small-network
-p125.pddl, 17, 5, 27, small-network
-p126.pddl, 22, 5, 24, small-network
-p127.pddl, 22, 5, 35, small-network
-p128.pddl, 27, 5, 29, small-network
-p129.pddl, 27, 5, 42, small-network
-p130.pddl, 32, 5, 34, small-network
-p131.pddl, 32, 5, 50, small-network
-p132.pddl, 37, 5, 39, small-network
-p133.pddl, 37, 5, 57, small-network
-p134.pddl, 42, 5, 44, small-network
-p135.pddl, 42, 5, 65, small-network
-p136.pddl, 47, 5, 49, small-network
-p137.pddl, 47, 5, 72, small-network
-p138.pddl, 4, 2, 6, tiny-network
-p139.pddl, 6, 2, 8, tiny-network
-p140.pddl, 6, 2, 11, tiny-network
-p141.pddl, 8, 2, 10, tiny-network
-p142.pddl, 8, 2, 14, tiny-network
-p143.pddl, 10, 2, 12, tiny-network
-p144.pddl, 10, 2, 17, tiny-network
-p145.pddl, 12, 2, 14, tiny-network
-p146.pddl, 12, 2, 20, tiny-network
-p147.pddl, 14, 2, 16, tiny-network
-p148.pddl, 14, 2, 23, tiny-network
-p149.pddl, 16, 2, 18, tiny-network
-p150.pddl, 16, 2, 26, tiny-network
-p151.pddl, 18, 2, 20, tiny-network
-p152.pddl, 18, 2, 29, tiny-network
-p153.pddl, 5, 3, 7, tiny-network
-p154.pddl, 5, 3, 9, tiny-network
-p155.pddl, 8, 3, 10, tiny-network
-p156.pddl, 8, 3, 14, tiny-network
-p157.pddl, 11, 3, 13, tiny-network
-p158.pddl, 11, 3, 18, tiny-network
-p159.pddl, 14, 3, 16, tiny-network
-p160.pddl, 14, 3, 23, tiny-network
-p161.pddl, 17, 3, 19, tiny-network
-p162.pddl, 17, 3, 27, tiny-network
-p163.pddl, 20, 3, 22, tiny-network
-p164.pddl, 20, 3, 32, tiny-network
-p165.pddl, 23, 3, 25, tiny-network
-p166.pddl, 23, 3, 36, tiny-network
-p167.pddl, 26, 3, 28, tiny-network
-p168.pddl, 26, 3, 41, tiny-network
-p169.pddl, 29, 3, 31, tiny-network
-p170.pddl, 29, 3, 45, tiny-network
-p171.pddl, 6, 4, 8, tiny-network
-p172.pddl, 6, 4, 11, tiny-network
-p173.pddl, 10, 4, 12, tiny-network
-p174.pddl, 10, 4, 17, tiny-network
-p175.pddl, 14, 4, 16, tiny-network
-p176.pddl, 14, 4, 23, tiny-network
-p177.pddl, 18, 4, 20, tiny-network
-p178.pddl, 18, 4, 29, tiny-network
-p179.pddl, 22, 4, 24, tiny-network
-p180.pddl, 22, 4, 35, tiny-network
-p181.pddl, 26, 4, 28, tiny-network
-p182.pddl, 26, 4, 41, tiny-network
-p183.pddl, 30, 4, 32, tiny-network
-p184.pddl, 30, 4, 47, tiny-network
-p185.pddl, 34, 4, 36, tiny-network
-p186.pddl, 34, 4, 53, tiny-network
-p187.pddl, 38, 4, 40, tiny-network
-p188.pddl, 38, 4, 59, tiny-network
-p189.pddl, 7, 5, 9, tiny-network
-p190.pddl, 7, 5, 12, tiny-network
-p191.pddl, 12, 5, 14, tiny-network
-p192.pddl, 12, 5, 20, tiny-network
-p193.pddl, 17, 5, 19, tiny-network
-p194.pddl, 17, 5, 27, tiny-network
-p195.pddl, 22, 5, 24, tiny-network
-p196.pddl, 22, 5, 35, tiny-network
-p197.pddl, 27, 5, 29, tiny-network
-p198.pddl, 27, 5, 42, tiny-network
-p199.pddl, 32, 5, 34, tiny-network
-p200.pddl, 32, 5, 50, tiny-network
-p201.pddl, 37, 5, 39, tiny-network
-p202.pddl, 37, 5, 57, tiny-network
-p203.pddl, 42, 5, 44, tiny-network
-p204.pddl, 42, 5, 65, tiny-network
-p205.pddl, 47, 5, 49, tiny-network
-p206.pddl, 47, 5, 72, tiny-network
+p0.pddl, --seed 1, 4, 2, 6, ring-network
+p1.pddl, --seed 2, 4, 2, 6, ring-network
+p2.pddl, --seed 1, 6, 2, 8, ring-network
+p3.pddl, --seed 2, 6, 2, 8, ring-network
+p4.pddl, --seed 1, 6, 2, 11, ring-network
+p5.pddl, --seed 2, 6, 2, 11, ring-network
+p6.pddl, --seed 1, 8, 2, 10, ring-network
+p7.pddl, --seed 2, 8, 2, 10, ring-network
+p8.pddl, --seed 1, 8, 2, 14, ring-network
+p9.pddl, --seed 2, 8, 2, 14, ring-network
+p10.pddl, --seed 1, 10, 2, 12, ring-network
+p11.pddl, --seed 2, 10, 2, 12, ring-network
+p12.pddl, --seed 1, 10, 2, 17, ring-network
+p13.pddl, --seed 2, 10, 2, 17, ring-network
+p14.pddl, --seed 1, 12, 2, 14, ring-network
+p15.pddl, --seed 2, 12, 2, 14, ring-network
+p16.pddl, --seed 1, 12, 2, 20, ring-network
+p17.pddl, --seed 2, 12, 2, 20, ring-network
+p18.pddl, --seed 1, 14, 2, 16, ring-network
+p19.pddl, --seed 2, 14, 2, 16, ring-network
+p20.pddl, --seed 1, 14, 2, 23, ring-network
+p21.pddl, --seed 2, 14, 2, 23, ring-network
+p22.pddl, --seed 1, 16, 2, 18, ring-network
+p23.pddl, --seed 2, 16, 2, 18, ring-network
+p24.pddl, --seed 1, 16, 2, 26, ring-network
+p25.pddl, --seed 2, 16, 2, 26, ring-network
+p26.pddl, --seed 1, 18, 2, 20, ring-network
+p27.pddl, --seed 2, 18, 2, 20, ring-network
+p28.pddl, --seed 1, 18, 2, 29, ring-network
+p29.pddl, --seed 2, 18, 2, 29, ring-network
+p30.pddl, --seed 1, 5, 3, 7, ring-network
+p31.pddl, --seed 2, 5, 3, 7, ring-network
+p32.pddl, --seed 1, 5, 3, 9, ring-network
+p33.pddl, --seed 2, 5, 3, 9, ring-network
+p34.pddl, --seed 1, 8, 3, 10, ring-network
+p35.pddl, --seed 2, 8, 3, 10, ring-network
+p36.pddl, --seed 1, 8, 3, 14, ring-network
+p37.pddl, --seed 2, 8, 3, 14, ring-network
+p38.pddl, --seed 1, 11, 3, 13, ring-network
+p39.pddl, --seed 2, 11, 3, 13, ring-network
+p40.pddl, --seed 1, 11, 3, 18, ring-network
+p41.pddl, --seed 2, 11, 3, 18, ring-network
+p42.pddl, --seed 1, 14, 3, 16, ring-network
+p43.pddl, --seed 2, 14, 3, 16, ring-network
+p44.pddl, --seed 1, 14, 3, 23, ring-network
+p45.pddl, --seed 2, 14, 3, 23, ring-network
+p46.pddl, --seed 1, 17, 3, 19, ring-network
+p47.pddl, --seed 2, 17, 3, 19, ring-network
+p48.pddl, --seed 1, 17, 3, 27, ring-network
+p49.pddl, --seed 2, 17, 3, 27, ring-network
+p50.pddl, --seed 1, 20, 3, 22, ring-network
+p51.pddl, --seed 2, 20, 3, 22, ring-network
+p52.pddl, --seed 1, 20, 3, 32, ring-network
+p53.pddl, --seed 2, 20, 3, 32, ring-network
+p54.pddl, --seed 1, 23, 3, 25, ring-network
+p55.pddl, --seed 2, 23, 3, 25, ring-network
+p56.pddl, --seed 1, 23, 3, 36, ring-network
+p57.pddl, --seed 2, 23, 3, 36, ring-network
+p58.pddl, --seed 1, 26, 3, 28, ring-network
+p59.pddl, --seed 2, 26, 3, 28, ring-network
+p60.pddl, --seed 1, 26, 3, 41, ring-network
+p61.pddl, --seed 2, 26, 3, 41, ring-network
+p62.pddl, --seed 1, 29, 3, 31, ring-network
+p63.pddl, --seed 2, 29, 3, 31, ring-network
+p64.pddl, --seed 1, 29, 3, 45, ring-network
+p65.pddl, --seed 2, 29, 3, 45, ring-network
+p66.pddl, --seed 1, 6, 4, 8, ring-network
+p67.pddl, --seed 2, 6, 4, 8, ring-network
+p68.pddl, --seed 1, 6, 4, 11, ring-network
+p69.pddl, --seed 2, 6, 4, 11, ring-network
+p70.pddl, --seed 1, 10, 4, 12, ring-network
+p71.pddl, --seed 2, 10, 4, 12, ring-network
+p72.pddl, --seed 1, 10, 4, 17, ring-network
+p73.pddl, --seed 2, 10, 4, 17, ring-network
+p74.pddl, --seed 1, 14, 4, 16, ring-network
+p75.pddl, --seed 2, 14, 4, 16, ring-network
+p76.pddl, --seed 1, 14, 4, 23, ring-network
+p77.pddl, --seed 2, 14, 4, 23, ring-network
+p78.pddl, --seed 1, 18, 4, 20, ring-network
+p79.pddl, --seed 2, 18, 4, 20, ring-network
+p80.pddl, --seed 1, 18, 4, 29, ring-network
+p81.pddl, --seed 2, 18, 4, 29, ring-network
+p82.pddl, --seed 1, 22, 4, 24, ring-network
+p83.pddl, --seed 2, 22, 4, 24, ring-network
+p84.pddl, --seed 1, 22, 4, 35, ring-network
+p85.pddl, --seed 2, 22, 4, 35, ring-network
+p86.pddl, --seed 1, 26, 4, 28, ring-network
+p87.pddl, --seed 2, 26, 4, 28, ring-network
+p88.pddl, --seed 1, 26, 4, 41, ring-network
+p89.pddl, --seed 2, 26, 4, 41, ring-network
+p90.pddl, --seed 1, 30, 4, 32, ring-network
+p91.pddl, --seed 2, 30, 4, 32, ring-network
+p92.pddl, --seed 1, 30, 4, 47, ring-network
+p93.pddl, --seed 2, 30, 4, 47, ring-network
+p94.pddl, --seed 1, 34, 4, 36, ring-network
+p95.pddl, --seed 2, 34, 4, 36, ring-network
+p96.pddl, --seed 1, 34, 4, 53, ring-network
+p97.pddl, --seed 2, 34, 4, 53, ring-network
+p98.pddl, --seed 1, 38, 4, 40, ring-network
+p99.pddl, --seed 2, 38, 4, 40, ring-network
+p100.pddl, --seed 1, 38, 4, 59, ring-network
+p101.pddl, --seed 2, 38, 4, 59, ring-network
+p102.pddl, --seed 1, 7, 5, 9, ring-network
+p103.pddl, --seed 2, 7, 5, 9, ring-network
+p104.pddl, --seed 1, 7, 5, 12, ring-network
+p105.pddl, --seed 2, 7, 5, 12, ring-network
+p106.pddl, --seed 1, 12, 5, 14, ring-network
+p107.pddl, --seed 2, 12, 5, 14, ring-network
+p108.pddl, --seed 1, 12, 5, 20, ring-network
+p109.pddl, --seed 2, 12, 5, 20, ring-network
+p110.pddl, --seed 1, 17, 5, 19, ring-network
+p111.pddl, --seed 2, 17, 5, 19, ring-network
+p112.pddl, --seed 1, 17, 5, 27, ring-network
+p113.pddl, --seed 2, 17, 5, 27, ring-network
+p114.pddl, --seed 1, 22, 5, 24, ring-network
+p115.pddl, --seed 2, 22, 5, 24, ring-network
+p116.pddl, --seed 1, 22, 5, 35, ring-network
+p117.pddl, --seed 2, 22, 5, 35, ring-network
+p118.pddl, --seed 1, 27, 5, 29, ring-network
+p119.pddl, --seed 2, 27, 5, 29, ring-network
+p120.pddl, --seed 1, 27, 5, 42, ring-network
+p121.pddl, --seed 2, 27, 5, 42, ring-network
+p122.pddl, --seed 1, 32, 5, 34, ring-network
+p123.pddl, --seed 2, 32, 5, 34, ring-network
+p124.pddl, --seed 1, 32, 5, 50, ring-network
+p125.pddl, --seed 2, 32, 5, 50, ring-network
+p126.pddl, --seed 1, 37, 5, 39, ring-network
+p127.pddl, --seed 2, 37, 5, 39, ring-network
+p128.pddl, --seed 1, 37, 5, 57, ring-network
+p129.pddl, --seed 2, 37, 5, 57, ring-network
+p130.pddl, --seed 1, 42, 5, 44, ring-network
+p131.pddl, --seed 2, 42, 5, 44, ring-network
+p132.pddl, --seed 1, 42, 5, 65, ring-network
+p133.pddl, --seed 2, 42, 5, 65, ring-network
+p134.pddl, --seed 1, 47, 5, 49, ring-network
+p135.pddl, --seed 2, 47, 5, 49, ring-network
+p136.pddl, --seed 1, 47, 5, 72, ring-network
+p137.pddl, --seed 2, 47, 5, 72, ring-network
+p138.pddl, --seed 1, 4, 2, 6, small-network
+p139.pddl, --seed 2, 4, 2, 6, small-network
+p140.pddl, --seed 1, 6, 2, 8, small-network
+p141.pddl, --seed 2, 6, 2, 8, small-network
+p142.pddl, --seed 1, 6, 2, 11, small-network
+p143.pddl, --seed 2, 6, 2, 11, small-network
+p144.pddl, --seed 1, 8, 2, 10, small-network
+p145.pddl, --seed 2, 8, 2, 10, small-network
+p146.pddl, --seed 1, 8, 2, 14, small-network
+p147.pddl, --seed 2, 8, 2, 14, small-network
+p148.pddl, --seed 1, 10, 2, 12, small-network
+p149.pddl, --seed 2, 10, 2, 12, small-network
+p150.pddl, --seed 1, 10, 2, 17, small-network
+p151.pddl, --seed 2, 10, 2, 17, small-network
+p152.pddl, --seed 1, 12, 2, 14, small-network
+p153.pddl, --seed 2, 12, 2, 14, small-network
+p154.pddl, --seed 1, 12, 2, 20, small-network
+p155.pddl, --seed 2, 12, 2, 20, small-network
+p156.pddl, --seed 1, 14, 2, 16, small-network
+p157.pddl, --seed 2, 14, 2, 16, small-network
+p158.pddl, --seed 1, 14, 2, 23, small-network
+p159.pddl, --seed 2, 14, 2, 23, small-network
+p160.pddl, --seed 1, 16, 2, 18, small-network
+p161.pddl, --seed 2, 16, 2, 18, small-network
+p162.pddl, --seed 1, 16, 2, 26, small-network
+p163.pddl, --seed 2, 16, 2, 26, small-network
+p164.pddl, --seed 1, 18, 2, 20, small-network
+p165.pddl, --seed 2, 18, 2, 20, small-network
+p166.pddl, --seed 1, 18, 2, 29, small-network
+p167.pddl, --seed 2, 18, 2, 29, small-network
+p168.pddl, --seed 1, 5, 3, 7, small-network
+p169.pddl, --seed 2, 5, 3, 7, small-network
+p170.pddl, --seed 1, 5, 3, 9, small-network
+p171.pddl, --seed 2, 5, 3, 9, small-network
+p172.pddl, --seed 1, 8, 3, 10, small-network
+p173.pddl, --seed 2, 8, 3, 10, small-network
+p174.pddl, --seed 1, 8, 3, 14, small-network
+p175.pddl, --seed 2, 8, 3, 14, small-network
+p176.pddl, --seed 1, 11, 3, 13, small-network
+p177.pddl, --seed 2, 11, 3, 13, small-network
+p178.pddl, --seed 1, 11, 3, 18, small-network
+p179.pddl, --seed 2, 11, 3, 18, small-network
+p180.pddl, --seed 1, 14, 3, 16, small-network
+p181.pddl, --seed 2, 14, 3, 16, small-network
+p182.pddl, --seed 1, 14, 3, 23, small-network
+p183.pddl, --seed 2, 14, 3, 23, small-network
+p184.pddl, --seed 1, 17, 3, 19, small-network
+p185.pddl, --seed 2, 17, 3, 19, small-network
+p186.pddl, --seed 1, 17, 3, 27, small-network
+p187.pddl, --seed 2, 17, 3, 27, small-network
+p188.pddl, --seed 1, 20, 3, 22, small-network
+p189.pddl, --seed 2, 20, 3, 22, small-network
+p190.pddl, --seed 1, 20, 3, 32, small-network
+p191.pddl, --seed 2, 20, 3, 32, small-network
+p192.pddl, --seed 1, 23, 3, 25, small-network
+p193.pddl, --seed 2, 23, 3, 25, small-network
+p194.pddl, --seed 1, 23, 3, 36, small-network
+p195.pddl, --seed 2, 23, 3, 36, small-network
+p196.pddl, --seed 1, 26, 3, 28, small-network
+p197.pddl, --seed 2, 26, 3, 28, small-network
+p198.pddl, --seed 1, 26, 3, 41, small-network
+p199.pddl, --seed 2, 26, 3, 41, small-network
+p200.pddl, --seed 1, 29, 3, 31, small-network
+p201.pddl, --seed 2, 29, 3, 31, small-network
+p202.pddl, --seed 1, 29, 3, 45, small-network
+p203.pddl, --seed 2, 29, 3, 45, small-network
+p204.pddl, --seed 1, 6, 4, 8, small-network
+p205.pddl, --seed 2, 6, 4, 8, small-network
+p206.pddl, --seed 1, 6, 4, 11, small-network
+p207.pddl, --seed 2, 6, 4, 11, small-network
+p208.pddl, --seed 1, 10, 4, 12, small-network
+p209.pddl, --seed 2, 10, 4, 12, small-network
+p210.pddl, --seed 1, 10, 4, 17, small-network
+p211.pddl, --seed 2, 10, 4, 17, small-network
+p212.pddl, --seed 1, 14, 4, 16, small-network
+p213.pddl, --seed 2, 14, 4, 16, small-network
+p214.pddl, --seed 1, 14, 4, 23, small-network
+p215.pddl, --seed 2, 14, 4, 23, small-network
+p216.pddl, --seed 1, 18, 4, 20, small-network
+p217.pddl, --seed 2, 18, 4, 20, small-network
+p218.pddl, --seed 1, 18, 4, 29, small-network
+p219.pddl, --seed 2, 18, 4, 29, small-network
+p220.pddl, --seed 1, 22, 4, 24, small-network
+p221.pddl, --seed 2, 22, 4, 24, small-network
+p222.pddl, --seed 1, 22, 4, 35, small-network
+p223.pddl, --seed 2, 22, 4, 35, small-network
+p224.pddl, --seed 1, 26, 4, 28, small-network
+p225.pddl, --seed 2, 26, 4, 28, small-network
+p226.pddl, --seed 1, 26, 4, 41, small-network
+p227.pddl, --seed 2, 26, 4, 41, small-network
+p228.pddl, --seed 1, 30, 4, 32, small-network
+p229.pddl, --seed 2, 30, 4, 32, small-network
+p230.pddl, --seed 1, 30, 4, 47, small-network
+p231.pddl, --seed 2, 30, 4, 47, small-network
+p232.pddl, --seed 1, 34, 4, 36, small-network
+p233.pddl, --seed 2, 34, 4, 36, small-network
+p234.pddl, --seed 1, 34, 4, 53, small-network
+p235.pddl, --seed 2, 34, 4, 53, small-network
+p236.pddl, --seed 1, 38, 4, 40, small-network
+p237.pddl, --seed 2, 38, 4, 40, small-network
+p238.pddl, --seed 1, 38, 4, 59, small-network
+p239.pddl, --seed 2, 38, 4, 59, small-network
+p240.pddl, --seed 1, 7, 5, 9, small-network
+p241.pddl, --seed 2, 7, 5, 9, small-network
+p242.pddl, --seed 1, 7, 5, 12, small-network
+p243.pddl, --seed 2, 7, 5, 12, small-network
+p244.pddl, --seed 1, 12, 5, 14, small-network
+p245.pddl, --seed 2, 12, 5, 14, small-network
+p246.pddl, --seed 1, 12, 5, 20, small-network
+p247.pddl, --seed 2, 12, 5, 20, small-network
+p248.pddl, --seed 1, 17, 5, 19, small-network
+p249.pddl, --seed 2, 17, 5, 19, small-network
+p250.pddl, --seed 1, 17, 5, 27, small-network
+p251.pddl, --seed 2, 17, 5, 27, small-network
+p252.pddl, --seed 1, 22, 5, 24, small-network
+p253.pddl, --seed 2, 22, 5, 24, small-network
+p254.pddl, --seed 1, 22, 5, 35, small-network
+p255.pddl, --seed 2, 22, 5, 35, small-network
+p256.pddl, --seed 1, 27, 5, 29, small-network
+p257.pddl, --seed 2, 27, 5, 29, small-network
+p258.pddl, --seed 1, 27, 5, 42, small-network
+p259.pddl, --seed 2, 27, 5, 42, small-network
+p260.pddl, --seed 1, 32, 5, 34, small-network
+p261.pddl, --seed 2, 32, 5, 34, small-network
+p262.pddl, --seed 1, 32, 5, 50, small-network
+p263.pddl, --seed 2, 32, 5, 50, small-network
+p264.pddl, --seed 1, 37, 5, 39, small-network
+p265.pddl, --seed 2, 37, 5, 39, small-network
+p266.pddl, --seed 1, 37, 5, 57, small-network
+p267.pddl, --seed 2, 37, 5, 57, small-network
+p268.pddl, --seed 1, 42, 5, 44, small-network
+p269.pddl, --seed 2, 42, 5, 44, small-network
+p270.pddl, --seed 1, 42, 5, 65, small-network
+p271.pddl, --seed 2, 42, 5, 65, small-network
+p272.pddl, --seed 1, 47, 5, 49, small-network
+p273.pddl, --seed 2, 47, 5, 49, small-network
+p274.pddl, --seed 1, 47, 5, 72, small-network
+p275.pddl, --seed 2, 47, 5, 72, small-network
+p276.pddl, --seed 1, 4, 2, 6, tiny-network
+p277.pddl, --seed 2, 4, 2, 6, tiny-network
+p278.pddl, --seed 1, 6, 2, 8, tiny-network
+p279.pddl, --seed 2, 6, 2, 8, tiny-network
+p280.pddl, --seed 1, 6, 2, 11, tiny-network
+p281.pddl, --seed 2, 6, 2, 11, tiny-network
+p282.pddl, --seed 1, 8, 2, 10, tiny-network
+p283.pddl, --seed 2, 8, 2, 10, tiny-network
+p284.pddl, --seed 1, 8, 2, 14, tiny-network
+p285.pddl, --seed 2, 8, 2, 14, tiny-network
+p286.pddl, --seed 1, 10, 2, 12, tiny-network
+p287.pddl, --seed 2, 10, 2, 12, tiny-network
+p288.pddl, --seed 1, 10, 2, 17, tiny-network
+p289.pddl, --seed 2, 10, 2, 17, tiny-network
+p290.pddl, --seed 1, 12, 2, 14, tiny-network
+p291.pddl, --seed 2, 12, 2, 14, tiny-network
+p292.pddl, --seed 1, 12, 2, 20, tiny-network
+p293.pddl, --seed 2, 12, 2, 20, tiny-network
+p294.pddl, --seed 1, 14, 2, 16, tiny-network
+p295.pddl, --seed 2, 14, 2, 16, tiny-network
+p296.pddl, --seed 1, 14, 2, 23, tiny-network
+p297.pddl, --seed 2, 14, 2, 23, tiny-network
+p298.pddl, --seed 1, 16, 2, 18, tiny-network
+p299.pddl, --seed 2, 16, 2, 18, tiny-network
+p300.pddl, --seed 1, 16, 2, 26, tiny-network
+p301.pddl, --seed 2, 16, 2, 26, tiny-network
+p302.pddl, --seed 1, 18, 2, 20, tiny-network
+p303.pddl, --seed 2, 18, 2, 20, tiny-network
+p304.pddl, --seed 1, 18, 2, 29, tiny-network
+p305.pddl, --seed 2, 18, 2, 29, tiny-network
+p306.pddl, --seed 1, 5, 3, 7, tiny-network
+p307.pddl, --seed 2, 5, 3, 7, tiny-network
+p308.pddl, --seed 1, 5, 3, 9, tiny-network
+p309.pddl, --seed 2, 5, 3, 9, tiny-network
+p310.pddl, --seed 1, 8, 3, 10, tiny-network
+p311.pddl, --seed 2, 8, 3, 10, tiny-network
+p312.pddl, --seed 1, 8, 3, 14, tiny-network
+p313.pddl, --seed 2, 8, 3, 14, tiny-network
+p314.pddl, --seed 1, 11, 3, 13, tiny-network
+p315.pddl, --seed 2, 11, 3, 13, tiny-network
+p316.pddl, --seed 1, 11, 3, 18, tiny-network
+p317.pddl, --seed 2, 11, 3, 18, tiny-network
+p318.pddl, --seed 1, 14, 3, 16, tiny-network
+p319.pddl, --seed 2, 14, 3, 16, tiny-network
+p320.pddl, --seed 1, 14, 3, 23, tiny-network
+p321.pddl, --seed 2, 14, 3, 23, tiny-network
+p322.pddl, --seed 1, 17, 3, 19, tiny-network
+p323.pddl, --seed 2, 17, 3, 19, tiny-network
+p324.pddl, --seed 1, 17, 3, 27, tiny-network
+p325.pddl, --seed 2, 17, 3, 27, tiny-network
+p326.pddl, --seed 1, 20, 3, 22, tiny-network
+p327.pddl, --seed 2, 20, 3, 22, tiny-network
+p328.pddl, --seed 1, 20, 3, 32, tiny-network
+p329.pddl, --seed 2, 20, 3, 32, tiny-network
+p330.pddl, --seed 1, 23, 3, 25, tiny-network
+p331.pddl, --seed 2, 23, 3, 25, tiny-network
+p332.pddl, --seed 1, 23, 3, 36, tiny-network
+p333.pddl, --seed 2, 23, 3, 36, tiny-network
+p334.pddl, --seed 1, 26, 3, 28, tiny-network
+p335.pddl, --seed 2, 26, 3, 28, tiny-network
+p336.pddl, --seed 1, 26, 3, 41, tiny-network
+p337.pddl, --seed 2, 26, 3, 41, tiny-network
+p338.pddl, --seed 1, 29, 3, 31, tiny-network
+p339.pddl, --seed 2, 29, 3, 31, tiny-network
+p340.pddl, --seed 1, 29, 3, 45, tiny-network
+p341.pddl, --seed 2, 29, 3, 45, tiny-network
+p342.pddl, --seed 1, 6, 4, 8, tiny-network
+p343.pddl, --seed 2, 6, 4, 8, tiny-network
+p344.pddl, --seed 1, 6, 4, 11, tiny-network
+p345.pddl, --seed 2, 6, 4, 11, tiny-network
+p346.pddl, --seed 1, 10, 4, 12, tiny-network
+p347.pddl, --seed 2, 10, 4, 12, tiny-network
+p348.pddl, --seed 1, 10, 4, 17, tiny-network
+p349.pddl, --seed 2, 10, 4, 17, tiny-network
+p350.pddl, --seed 1, 14, 4, 16, tiny-network
+p351.pddl, --seed 2, 14, 4, 16, tiny-network
+p352.pddl, --seed 1, 14, 4, 23, tiny-network
+p353.pddl, --seed 2, 14, 4, 23, tiny-network
+p354.pddl, --seed 1, 18, 4, 20, tiny-network
+p355.pddl, --seed 2, 18, 4, 20, tiny-network
+p356.pddl, --seed 1, 18, 4, 29, tiny-network
+p357.pddl, --seed 2, 18, 4, 29, tiny-network
+p358.pddl, --seed 1, 22, 4, 24, tiny-network
+p359.pddl, --seed 2, 22, 4, 24, tiny-network
+p360.pddl, --seed 1, 22, 4, 35, tiny-network
+p361.pddl, --seed 2, 22, 4, 35, tiny-network
+p362.pddl, --seed 1, 26, 4, 28, tiny-network
+p363.pddl, --seed 2, 26, 4, 28, tiny-network
+p364.pddl, --seed 1, 26, 4, 41, tiny-network
+p365.pddl, --seed 2, 26, 4, 41, tiny-network
+p366.pddl, --seed 1, 30, 4, 32, tiny-network
+p367.pddl, --seed 2, 30, 4, 32, tiny-network
+p368.pddl, --seed 1, 30, 4, 47, tiny-network
+p369.pddl, --seed 2, 30, 4, 47, tiny-network
+p370.pddl, --seed 1, 34, 4, 36, tiny-network
+p371.pddl, --seed 2, 34, 4, 36, tiny-network
+p372.pddl, --seed 1, 34, 4, 53, tiny-network
+p373.pddl, --seed 2, 34, 4, 53, tiny-network
+p374.pddl, --seed 1, 38, 4, 40, tiny-network
+p375.pddl, --seed 2, 38, 4, 40, tiny-network
+p376.pddl, --seed 1, 38, 4, 59, tiny-network
+p377.pddl, --seed 2, 38, 4, 59, tiny-network
+p378.pddl, --seed 1, 7, 5, 9, tiny-network
+p379.pddl, --seed 2, 7, 5, 9, tiny-network
+p380.pddl, --seed 1, 7, 5, 12, tiny-network
+p381.pddl, --seed 2, 7, 5, 12, tiny-network
+p382.pddl, --seed 1, 12, 5, 14, tiny-network
+p383.pddl, --seed 2, 12, 5, 14, tiny-network
+p384.pddl, --seed 1, 12, 5, 20, tiny-network
+p385.pddl, --seed 2, 12, 5, 20, tiny-network
+p386.pddl, --seed 1, 17, 5, 19, tiny-network
+p387.pddl, --seed 2, 17, 5, 19, tiny-network
+p388.pddl, --seed 1, 17, 5, 27, tiny-network
+p389.pddl, --seed 2, 17, 5, 27, tiny-network
+p390.pddl, --seed 1, 22, 5, 24, tiny-network
+p391.pddl, --seed 2, 22, 5, 24, tiny-network
+p392.pddl, --seed 1, 22, 5, 35, tiny-network
+p393.pddl, --seed 2, 22, 5, 35, tiny-network
+p394.pddl, --seed 1, 27, 5, 29, tiny-network
+p395.pddl, --seed 2, 27, 5, 29, tiny-network
+p396.pddl, --seed 1, 27, 5, 42, tiny-network
+p397.pddl, --seed 2, 27, 5, 42, tiny-network
+p398.pddl, --seed 1, 32, 5, 34, tiny-network
+p399.pddl, --seed 2, 32, 5, 34, tiny-network
+p400.pddl, --seed 1, 32, 5, 50, tiny-network
+p401.pddl, --seed 2, 32, 5, 50, tiny-network
+p402.pddl, --seed 1, 37, 5, 39, tiny-network
+p403.pddl, --seed 2, 37, 5, 39, tiny-network
+p404.pddl, --seed 1, 37, 5, 57, tiny-network
+p405.pddl, --seed 2, 37, 5, 57, tiny-network
+p406.pddl, --seed 1, 42, 5, 44, tiny-network
+p407.pddl, --seed 2, 42, 5, 44, tiny-network
+p408.pddl, --seed 1, 42, 5, 65, tiny-network
+p409.pddl, --seed 2, 42, 5, 65, tiny-network
+p410.pddl, --seed 1, 47, 5, 49, tiny-network
+p411.pddl, --seed 2, 47, 5, 49, tiny-network
+p412.pddl, --seed 1, 47, 5, 72, tiny-network
+p413.pddl, --seed 2, 47, 5, 72, tiny-network
