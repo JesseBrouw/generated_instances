@@ -1,5 +1,5 @@
 Usage: maintenance <days> <planes> <mechanics> <cities> <visits> [<seed>]
-gp0.pddl, 30 90 1 3 5 1
+p0.pddl, 30 90 1 3 5 1
 p1.pddl, 30 90 1 3 5 2
 p2.pddl, 30 90 1 3 5 3
 p3.pddl, 30 90 1 3 5 4
