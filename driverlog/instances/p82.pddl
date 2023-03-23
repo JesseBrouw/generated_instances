@@ -1,99 +1,58 @@
 (define (problem DLOG-1-1-6)
 	(:domain driverlog)
 	(:objects
-	driver1
-	truck1
-	package1
-	package2
-	package3
-	package4
-	package5
-	package6
-	s0
-	s1
-	s2
-	s3
-	s4
-	s5
-	s6
-	s7
-	s8
-	s9
-	s10
-	s11
-	p0-3
-	p0-11
-	p1-4
-	p1-8
-	p2-0
-	p2-10
-	p2-11
-	p3-5
-	p3-9
-	p4-6
-	p4-9
-	p5-7
-	p5-9
-	p5-11
-	p6-1
-	p7-2
-	p7-3
-	p8-10
-	p10-4
-	p11-8
-	p11-10
+	driver1 - driver
+	truck1 - truck
+	package1 - obj
+	package2 - obj
+	package3 - obj
+	package4 - obj
+	package5 - obj
+	package6 - obj
+	s0 - location
+	s1 - location
+	s2 - location
+	s3 - location
+	s4 - location
+	s5 - location
+	s6 - location
+	s7 - location
+	s8 - location
+	s9 - location
+	s10 - location
+	s11 - location
+	p0-3 - location
+	p0-11 - location
+	p1-4 - location
+	p1-8 - location
+	p2-0 - location
+	p2-10 - location
+	p2-11 - location
+	p3-5 - location
+	p3-9 - location
+	p4-6 - location
+	p4-9 - location
+	p5-7 - location
+	p5-9 - location
+	p5-11 - location
+	p6-1 - location
+	p7-2 - location
+	p7-3 - location
+	p8-10 - location
+	p10-4 - location
+	p11-8 - location
+	p11-10 - location
 	)
 	(:init
 	(at driver1 s9)
-	(DRIVER driver1)
 	(at truck1 s11)
 	(empty truck1)
-	(TRUCK truck1)
 	(at package1 s1)
-	(OBJ package1)
 	(at package2 s0)
-	(OBJ package2)
 	(at package3 s5)
-	(OBJ package3)
 	(at package4 s9)
-	(OBJ package4)
 	(at package5 s11)
-	(OBJ package5)
 	(at package6 s1)
-	(OBJ package6)
-	(LOCATION s0)
-	(LOCATION s1)
-	(LOCATION s2)
-	(LOCATION s3)
-	(LOCATION s4)
-	(LOCATION s5)
-	(LOCATION s6)
-	(LOCATION s7)
-	(LOCATION s8)
-	(LOCATION s9)
-	(LOCATION s10)
-	(LOCATION s11)
-	(LOCATION p0-3)
-	(LOCATION p0-11)
-	(LOCATION p1-4)
-	(LOCATION p1-8)
-	(LOCATION p2-0)
-	(LOCATION p2-10)
-	(LOCATION p2-11)
-	(LOCATION p3-5)
-	(LOCATION p3-9)
-	(LOCATION p4-6)
-	(LOCATION p4-9)
-	(LOCATION p5-7)
-	(LOCATION p5-9)
-	(LOCATION p5-11)
-	(LOCATION p6-1)
-	(LOCATION p7-2)
-	(LOCATION p7-3)
-	(LOCATION p8-10)
-	(LOCATION p10-4)
-	(LOCATION p11-8)
-	(LOCATION p11-10)
 	(path s0 p0-3)
 	(path p0-3 s0)
 	(path s3 p0-3)

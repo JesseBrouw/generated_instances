@@ -1,81 +1,49 @@
 (define (problem DLOG-1-1-6)
 	(:domain driverlog)
 	(:objects
-	driver1
-	truck1
-	package1
-	package2
-	package3
-	package4
-	package5
-	package6
-	s0
-	s1
-	s2
-	s3
-	s4
-	s5
-	s6
-	s7
-	s8
-	p0-1
-	p0-8
-	p1-0
-	p1-3
-	p2-6
-	p2-8
-	p3-4
-	p3-8
-	p4-0
-	p4-8
-	p5-0
-	p7-2
-	p7-3
-	p8-6
-	p8-7
+	driver1 - driver
+	truck1 - truck
+	package1 - obj
+	package2 - obj
+	package3 - obj
+	package4 - obj
+	package5 - obj
+	package6 - obj
+	s0 - location
+	s1 - location
+	s2 - location
+	s3 - location
+	s4 - location
+	s5 - location
+	s6 - location
+	s7 - location
+	s8 - location
+	p0-1 - location
+	p0-8 - location
+	p1-0 - location
+	p1-3 - location
+	p2-6 - location
+	p2-8 - location
+	p3-4 - location
+	p3-8 - location
+	p4-0 - location
+	p4-8 - location
+	p5-0 - location
+	p7-2 - location
+	p7-3 - location
+	p8-6 - location
+	p8-7 - location
 	)
 	(:init
 	(at driver1 s7)
-	(DRIVER driver1)
 	(at truck1 s2)
 	(empty truck1)
-	(TRUCK truck1)
 	(at package1 s5)
-	(OBJ package1)
 	(at package2 s8)
-	(OBJ package2)
 	(at package3 s4)
-	(OBJ package3)
 	(at package4 s8)
-	(OBJ package4)
 	(at package5 s6)
-	(OBJ package5)
 	(at package6 s2)
-	(OBJ package6)
-	(LOCATION s0)
-	(LOCATION s1)
-	(LOCATION s2)
-	(LOCATION s3)
-	(LOCATION s4)
-	(LOCATION s5)
-	(LOCATION s6)
-	(LOCATION s7)
-	(LOCATION s8)
-	(LOCATION p0-1)
-	(LOCATION p0-8)
-	(LOCATION p1-0)
-	(LOCATION p1-3)
-	(LOCATION p2-6)
-	(LOCATION p2-8)
-	(LOCATION p3-4)
-	(LOCATION p3-8)
-	(LOCATION p4-0)
-	(LOCATION p4-8)
-	(LOCATION p5-0)
-	(LOCATION p7-2)
-	(LOCATION p7-3)
-	(LOCATION p8-6)
-	(LOCATION p8-7)
 	(path s0 p0-1)
 	(path p0-1 s0)
 	(path s1 p0-1)

@@ -1,379 +1,379 @@
 usage: python generator.py <products> <orders> <density> --domain <domain file (default: domain.pddl)> --problem <problem out file (default: problem.pddl)> --seed <seed>p0.pddl 8 20 80 --problem p0.pddl --seed 1
-p0.pddl 8 20 80 --problem p0.pddl --seed 1
-p1.pddl 8 20 80 --problem p1.pddl --seed 2
-p2.pddl 8 20 80 --problem p2.pddl --seed 3
-p3.pddl 8 24 80 --problem p3.pddl --seed 1
-p4.pddl 8 24 80 --problem p4.pddl --seed 2
-p5.pddl 8 24 80 --problem p5.pddl --seed 3
-p6.pddl 8 28 80 --problem p6.pddl --seed 1
-p7.pddl 8 28 80 --problem p7.pddl --seed 2
-p8.pddl 8 28 80 --problem p8.pddl --seed 3
-p9.pddl 8 32 80 --problem p9.pddl --seed 1
-p10.pddl 8 32 80 --problem p10.pddl --seed 2
-p11.pddl 8 32 80 --problem p11.pddl --seed 3
-p12.pddl 8 36 80 --problem p12.pddl --seed 1
-p13.pddl 8 36 80 --problem p13.pddl --seed 2
-p14.pddl 8 36 80 --problem p14.pddl --seed 3
-p15.pddl 8 40 80 --problem p15.pddl --seed 1
-p16.pddl 8 40 80 --problem p16.pddl --seed 2
-p17.pddl 8 40 80 --problem p17.pddl --seed 3
-p18.pddl 12 20 80 --problem p18.pddl --seed 1
-p19.pddl 12 20 80 --problem p19.pddl --seed 2
-p20.pddl 12 20 80 --problem p20.pddl --seed 3
-p21.pddl 12 24 80 --problem p21.pddl --seed 1
-p22.pddl 12 24 80 --problem p22.pddl --seed 2
-p23.pddl 12 24 80 --problem p23.pddl --seed 3
-p24.pddl 12 28 80 --problem p24.pddl --seed 1
-p25.pddl 12 28 80 --problem p25.pddl --seed 2
-p26.pddl 12 28 80 --problem p26.pddl --seed 3
-p27.pddl 12 32 80 --problem p27.pddl --seed 1
-p28.pddl 12 32 80 --problem p28.pddl --seed 2
-p29.pddl 12 32 80 --problem p29.pddl --seed 3
-p30.pddl 12 36 80 --problem p30.pddl --seed 1
-p31.pddl 12 36 80 --problem p31.pddl --seed 2
-p32.pddl 12 36 80 --problem p32.pddl --seed 3
-p33.pddl 12 40 80 --problem p33.pddl --seed 1
-p34.pddl 12 40 80 --problem p34.pddl --seed 2
-p35.pddl 12 40 80 --problem p35.pddl --seed 3
-p36.pddl 16 20 80 --problem p36.pddl --seed 1
-p37.pddl 16 20 80 --problem p37.pddl --seed 2
-p38.pddl 16 20 80 --problem p38.pddl --seed 3
-p39.pddl 16 24 80 --problem p39.pddl --seed 1
-p40.pddl 16 24 80 --problem p40.pddl --seed 2
-p41.pddl 16 24 80 --problem p41.pddl --seed 3
-p42.pddl 16 28 80 --problem p42.pddl --seed 1
-p43.pddl 16 28 80 --problem p43.pddl --seed 2
-p44.pddl 16 28 80 --problem p44.pddl --seed 3
-p45.pddl 16 32 80 --problem p45.pddl --seed 1
-p46.pddl 16 32 80 --problem p46.pddl --seed 2
-p47.pddl 16 32 80 --problem p47.pddl --seed 3
-p48.pddl 16 36 80 --problem p48.pddl --seed 1
-p49.pddl 16 36 80 --problem p49.pddl --seed 2
-p50.pddl 16 36 80 --problem p50.pddl --seed 3
-p51.pddl 16 40 80 --problem p51.pddl --seed 1
-p52.pddl 16 40 80 --problem p52.pddl --seed 2
-p53.pddl 16 40 80 --problem p53.pddl --seed 3
-p54.pddl 20 20 80 --problem p54.pddl --seed 1
-p55.pddl 20 20 80 --problem p55.pddl --seed 2
-p56.pddl 20 20 80 --problem p56.pddl --seed 3
-p57.pddl 20 24 80 --problem p57.pddl --seed 1
-p58.pddl 20 24 80 --problem p58.pddl --seed 2
-p59.pddl 20 24 80 --problem p59.pddl --seed 3
-p60.pddl 20 28 80 --problem p60.pddl --seed 1
-p61.pddl 20 28 80 --problem p61.pddl --seed 2
-p62.pddl 20 28 80 --problem p62.pddl --seed 3
-p63.pddl 20 32 80 --problem p63.pddl --seed 1
-p64.pddl 20 32 80 --problem p64.pddl --seed 2
-p65.pddl 20 32 80 --problem p65.pddl --seed 3
-p66.pddl 20 36 80 --problem p66.pddl --seed 1
-p67.pddl 20 36 80 --problem p67.pddl --seed 2
-p68.pddl 20 36 80 --problem p68.pddl --seed 3
-p69.pddl 20 40 80 --problem p69.pddl --seed 1
-p70.pddl 20 40 80 --problem p70.pddl --seed 2
-p71.pddl 20 40 80 --problem p71.pddl --seed 3
-p72.pddl 24 20 80 --problem p72.pddl --seed 1
-p73.pddl 24 20 80 --problem p73.pddl --seed 2
-p74.pddl 24 20 80 --problem p74.pddl --seed 3
-p75.pddl 24 24 80 --problem p75.pddl --seed 1
-p76.pddl 24 24 80 --problem p76.pddl --seed 2
-p77.pddl 24 24 80 --problem p77.pddl --seed 3
-p78.pddl 24 28 80 --problem p78.pddl --seed 1
-p79.pddl 24 28 80 --problem p79.pddl --seed 2
-p80.pddl 24 28 80 --problem p80.pddl --seed 3
-p81.pddl 24 32 80 --problem p81.pddl --seed 1
-p82.pddl 24 32 80 --problem p82.pddl --seed 2
-p83.pddl 24 32 80 --problem p83.pddl --seed 3
-p84.pddl 24 36 80 --problem p84.pddl --seed 1
-p85.pddl 24 36 80 --problem p85.pddl --seed 2
-p86.pddl 24 36 80 --problem p86.pddl --seed 3
-p87.pddl 24 40 80 --problem p87.pddl --seed 1
-p88.pddl 24 40 80 --problem p88.pddl --seed 2
-p89.pddl 24 40 80 --problem p89.pddl --seed 3
-p90.pddl 28 20 80 --problem p90.pddl --seed 1
-p91.pddl 28 20 80 --problem p91.pddl --seed 2
-p92.pddl 28 20 80 --problem p92.pddl --seed 3
-p93.pddl 28 24 80 --problem p93.pddl --seed 1
-p94.pddl 28 24 80 --problem p94.pddl --seed 2
-p95.pddl 28 24 80 --problem p95.pddl --seed 3
-p96.pddl 28 28 80 --problem p96.pddl --seed 1
-p97.pddl 28 28 80 --problem p97.pddl --seed 2
-p98.pddl 28 28 80 --problem p98.pddl --seed 3
-p99.pddl 28 32 80 --problem p99.pddl --seed 1
-p100.pddl 28 32 80 --problem p100.pddl --seed 2
-p101.pddl 28 32 80 --problem p101.pddl --seed 3
-p102.pddl 28 36 80 --problem p102.pddl --seed 1
-p103.pddl 28 36 80 --problem p103.pddl --seed 2
-p104.pddl 28 36 80 --problem p104.pddl --seed 3
-p105.pddl 28 40 80 --problem p105.pddl --seed 1
-p106.pddl 28 40 80 --problem p106.pddl --seed 2
-p107.pddl 28 40 80 --problem p107.pddl --seed 3
-p108.pddl 32 20 80 --problem p108.pddl --seed 1
-p109.pddl 32 20 80 --problem p109.pddl --seed 2
-p110.pddl 32 20 80 --problem p110.pddl --seed 3
-p111.pddl 32 24 80 --problem p111.pddl --seed 1
-p112.pddl 32 24 80 --problem p112.pddl --seed 2
-p113.pddl 32 24 80 --problem p113.pddl --seed 3
-p114.pddl 32 28 80 --problem p114.pddl --seed 1
-p115.pddl 32 28 80 --problem p115.pddl --seed 2
-p116.pddl 32 28 80 --problem p116.pddl --seed 3
-p117.pddl 32 32 80 --problem p117.pddl --seed 1
-p118.pddl 32 32 80 --problem p118.pddl --seed 2
-p119.pddl 32 32 80 --problem p119.pddl --seed 3
-p120.pddl 32 36 80 --problem p120.pddl --seed 1
-p121.pddl 32 36 80 --problem p121.pddl --seed 2
-p122.pddl 32 36 80 --problem p122.pddl --seed 3
-p123.pddl 32 40 80 --problem p123.pddl --seed 1
-p124.pddl 32 40 80 --problem p124.pddl --seed 2
-p125.pddl 32 40 80 --problem p125.pddl --seed 3
-p126.pddl 36 20 80 --problem p126.pddl --seed 1
-p127.pddl 36 20 80 --problem p127.pddl --seed 2
-p128.pddl 36 20 80 --problem p128.pddl --seed 3
-p129.pddl 36 24 80 --problem p129.pddl --seed 1
-p130.pddl 36 24 80 --problem p130.pddl --seed 2
-p131.pddl 36 24 80 --problem p131.pddl --seed 3
-p132.pddl 36 28 80 --problem p132.pddl --seed 1
-p133.pddl 36 28 80 --problem p133.pddl --seed 2
-p134.pddl 36 28 80 --problem p134.pddl --seed 3
-p135.pddl 36 32 80 --problem p135.pddl --seed 1
-p136.pddl 36 32 80 --problem p136.pddl --seed 2
-p137.pddl 36 32 80 --problem p137.pddl --seed 3
-p138.pddl 36 36 80 --problem p138.pddl --seed 1
-p139.pddl 36 36 80 --problem p139.pddl --seed 2
-p140.pddl 36 36 80 --problem p140.pddl --seed 3
-p141.pddl 36 40 80 --problem p141.pddl --seed 1
-p142.pddl 36 40 80 --problem p142.pddl --seed 2
-p143.pddl 36 40 80 --problem p143.pddl --seed 3
-p144.pddl 40 20 80 --problem p144.pddl --seed 1
-p145.pddl 40 20 80 --problem p145.pddl --seed 2
-p146.pddl 40 20 80 --problem p146.pddl --seed 3
-p147.pddl 40 24 80 --problem p147.pddl --seed 1
-p148.pddl 40 24 80 --problem p148.pddl --seed 2
-p149.pddl 40 24 80 --problem p149.pddl --seed 3
-p150.pddl 40 28 80 --problem p150.pddl --seed 1
-p151.pddl 40 28 80 --problem p151.pddl --seed 2
-p152.pddl 40 28 80 --problem p152.pddl --seed 3
-p153.pddl 40 32 80 --problem p153.pddl --seed 1
-p154.pddl 40 32 80 --problem p154.pddl --seed 2
-p155.pddl 40 32 80 --problem p155.pddl --seed 3
-p156.pddl 40 36 80 --problem p156.pddl --seed 1
-p157.pddl 40 36 80 --problem p157.pddl --seed 2
-p158.pddl 40 36 80 --problem p158.pddl --seed 3
-p159.pddl 40 40 80 --problem p159.pddl --seed 1
-p160.pddl 40 40 80 --problem p160.pddl --seed 2
-p161.pddl 40 40 80 --problem p161.pddl --seed 3
-p162.pddl 44 20 80 --problem p162.pddl --seed 1
-p163.pddl 44 20 80 --problem p163.pddl --seed 2
-p164.pddl 44 20 80 --problem p164.pddl --seed 3
-p165.pddl 44 24 80 --problem p165.pddl --seed 1
-p166.pddl 44 24 80 --problem p166.pddl --seed 2
-p167.pddl 44 24 80 --problem p167.pddl --seed 3
-p168.pddl 44 28 80 --problem p168.pddl --seed 1
-p169.pddl 44 28 80 --problem p169.pddl --seed 2
-p170.pddl 44 28 80 --problem p170.pddl --seed 3
-p171.pddl 44 32 80 --problem p171.pddl --seed 1
-p172.pddl 44 32 80 --problem p172.pddl --seed 2
-p173.pddl 44 32 80 --problem p173.pddl --seed 3
-p174.pddl 44 36 80 --problem p174.pddl --seed 1
-p175.pddl 44 36 80 --problem p175.pddl --seed 2
-p176.pddl 44 36 80 --problem p176.pddl --seed 3
-p177.pddl 44 40 80 --problem p177.pddl --seed 1
-p178.pddl 44 40 80 --problem p178.pddl --seed 2
-p179.pddl 44 40 80 --problem p179.pddl --seed 3
-p180.pddl 48 20 80 --problem p180.pddl --seed 1
-p181.pddl 48 20 80 --problem p181.pddl --seed 2
-p182.pddl 48 20 80 --problem p182.pddl --seed 3
-p183.pddl 48 24 80 --problem p183.pddl --seed 1
-p184.pddl 48 24 80 --problem p184.pddl --seed 2
-p185.pddl 48 24 80 --problem p185.pddl --seed 3
-p186.pddl 48 28 80 --problem p186.pddl --seed 1
-p187.pddl 48 28 80 --problem p187.pddl --seed 2
-p188.pddl 48 28 80 --problem p188.pddl --seed 3
-p189.pddl 48 32 80 --problem p189.pddl --seed 1
-p190.pddl 48 32 80 --problem p190.pddl --seed 2
-p191.pddl 48 32 80 --problem p191.pddl --seed 3
-p192.pddl 48 36 80 --problem p192.pddl --seed 1
-p193.pddl 48 36 80 --problem p193.pddl --seed 2
-p194.pddl 48 36 80 --problem p194.pddl --seed 3
-p195.pddl 48 40 80 --problem p195.pddl --seed 1
-p196.pddl 48 40 80 --problem p196.pddl --seed 2
-p197.pddl 48 40 80 --problem p197.pddl --seed 3
-p198.pddl 52 20 80 --problem p198.pddl --seed 1
-p199.pddl 52 20 80 --problem p199.pddl --seed 2
-p200.pddl 52 20 80 --problem p200.pddl --seed 3
-p201.pddl 52 24 80 --problem p201.pddl --seed 1
-p202.pddl 52 24 80 --problem p202.pddl --seed 2
-p203.pddl 52 24 80 --problem p203.pddl --seed 3
-p204.pddl 52 28 80 --problem p204.pddl --seed 1
-p205.pddl 52 28 80 --problem p205.pddl --seed 2
-p206.pddl 52 28 80 --problem p206.pddl --seed 3
-p207.pddl 52 32 80 --problem p207.pddl --seed 1
-p208.pddl 52 32 80 --problem p208.pddl --seed 2
-p209.pddl 52 32 80 --problem p209.pddl --seed 3
-p210.pddl 52 36 80 --problem p210.pddl --seed 1
-p211.pddl 52 36 80 --problem p211.pddl --seed 2
-p212.pddl 52 36 80 --problem p212.pddl --seed 3
-p213.pddl 52 40 80 --problem p213.pddl --seed 1
-p214.pddl 52 40 80 --problem p214.pddl --seed 2
-p215.pddl 52 40 80 --problem p215.pddl --seed 3
-p216.pddl 56 20 80 --problem p216.pddl --seed 1
-p217.pddl 56 20 80 --problem p217.pddl --seed 2
-p218.pddl 56 20 80 --problem p218.pddl --seed 3
-p219.pddl 56 24 80 --problem p219.pddl --seed 1
-p220.pddl 56 24 80 --problem p220.pddl --seed 2
-p221.pddl 56 24 80 --problem p221.pddl --seed 3
-p222.pddl 56 28 80 --problem p222.pddl --seed 1
-p223.pddl 56 28 80 --problem p223.pddl --seed 2
-p224.pddl 56 28 80 --problem p224.pddl --seed 3
-p225.pddl 56 32 80 --problem p225.pddl --seed 1
-p226.pddl 56 32 80 --problem p226.pddl --seed 2
-p227.pddl 56 32 80 --problem p227.pddl --seed 3
-p228.pddl 56 36 80 --problem p228.pddl --seed 1
-p229.pddl 56 36 80 --problem p229.pddl --seed 2
-p230.pddl 56 36 80 --problem p230.pddl --seed 3
-p231.pddl 56 40 80 --problem p231.pddl --seed 1
-p232.pddl 56 40 80 --problem p232.pddl --seed 2
-p233.pddl 56 40 80 --problem p233.pddl --seed 3
-p234.pddl 60 20 80 --problem p234.pddl --seed 1
-p235.pddl 60 20 80 --problem p235.pddl --seed 2
-p236.pddl 60 20 80 --problem p236.pddl --seed 3
-p237.pddl 60 24 80 --problem p237.pddl --seed 1
-p238.pddl 60 24 80 --problem p238.pddl --seed 2
-p239.pddl 60 24 80 --problem p239.pddl --seed 3
-p240.pddl 60 28 80 --problem p240.pddl --seed 1
-p241.pddl 60 28 80 --problem p241.pddl --seed 2
-p242.pddl 60 28 80 --problem p242.pddl --seed 3
-p243.pddl 60 32 80 --problem p243.pddl --seed 1
-p244.pddl 60 32 80 --problem p244.pddl --seed 2
-p245.pddl 60 32 80 --problem p245.pddl --seed 3
-p246.pddl 60 36 80 --problem p246.pddl --seed 1
-p247.pddl 60 36 80 --problem p247.pddl --seed 2
-p248.pddl 60 36 80 --problem p248.pddl --seed 3
-p249.pddl 60 40 80 --problem p249.pddl --seed 1
-p250.pddl 60 40 80 --problem p250.pddl --seed 2
-p251.pddl 60 40 80 --problem p251.pddl --seed 3
-p252.pddl 64 20 80 --problem p252.pddl --seed 1
-p253.pddl 64 20 80 --problem p253.pddl --seed 2
-p254.pddl 64 20 80 --problem p254.pddl --seed 3
-p255.pddl 64 24 80 --problem p255.pddl --seed 1
-p256.pddl 64 24 80 --problem p256.pddl --seed 2
-p257.pddl 64 24 80 --problem p257.pddl --seed 3
-p258.pddl 64 28 80 --problem p258.pddl --seed 1
-p259.pddl 64 28 80 --problem p259.pddl --seed 2
-p260.pddl 64 28 80 --problem p260.pddl --seed 3
-p261.pddl 64 32 80 --problem p261.pddl --seed 1
-p262.pddl 64 32 80 --problem p262.pddl --seed 2
-p263.pddl 64 32 80 --problem p263.pddl --seed 3
-p264.pddl 64 36 80 --problem p264.pddl --seed 1
-p265.pddl 64 36 80 --problem p265.pddl --seed 2
-p266.pddl 64 36 80 --problem p266.pddl --seed 3
-p267.pddl 64 40 80 --problem p267.pddl --seed 1
-p268.pddl 64 40 80 --problem p268.pddl --seed 2
-p269.pddl 64 40 80 --problem p269.pddl --seed 3
-p270.pddl 68 20 80 --problem p270.pddl --seed 1
-p271.pddl 68 20 80 --problem p271.pddl --seed 2
-p272.pddl 68 20 80 --problem p272.pddl --seed 3
-p273.pddl 68 24 80 --problem p273.pddl --seed 1
-p274.pddl 68 24 80 --problem p274.pddl --seed 2
-p275.pddl 68 24 80 --problem p275.pddl --seed 3
-p276.pddl 68 28 80 --problem p276.pddl --seed 1
-p277.pddl 68 28 80 --problem p277.pddl --seed 2
-p278.pddl 68 28 80 --problem p278.pddl --seed 3
-p279.pddl 68 32 80 --problem p279.pddl --seed 1
-p280.pddl 68 32 80 --problem p280.pddl --seed 2
-p281.pddl 68 32 80 --problem p281.pddl --seed 3
-p282.pddl 68 36 80 --problem p282.pddl --seed 1
-p283.pddl 68 36 80 --problem p283.pddl --seed 2
-p284.pddl 68 36 80 --problem p284.pddl --seed 3
-p285.pddl 68 40 80 --problem p285.pddl --seed 1
-p286.pddl 68 40 80 --problem p286.pddl --seed 2
-p287.pddl 68 40 80 --problem p287.pddl --seed 3
-p288.pddl 72 20 80 --problem p288.pddl --seed 1
-p289.pddl 72 20 80 --problem p289.pddl --seed 2
-p290.pddl 72 20 80 --problem p290.pddl --seed 3
-p291.pddl 72 24 80 --problem p291.pddl --seed 1
-p292.pddl 72 24 80 --problem p292.pddl --seed 2
-p293.pddl 72 24 80 --problem p293.pddl --seed 3
-p294.pddl 72 28 80 --problem p294.pddl --seed 1
-p295.pddl 72 28 80 --problem p295.pddl --seed 2
-p296.pddl 72 28 80 --problem p296.pddl --seed 3
-p297.pddl 72 32 80 --problem p297.pddl --seed 1
-p298.pddl 72 32 80 --problem p298.pddl --seed 2
-p299.pddl 72 32 80 --problem p299.pddl --seed 3
-p300.pddl 72 36 80 --problem p300.pddl --seed 1
-p301.pddl 72 36 80 --problem p301.pddl --seed 2
-p302.pddl 72 36 80 --problem p302.pddl --seed 3
-p303.pddl 72 40 80 --problem p303.pddl --seed 1
-p304.pddl 72 40 80 --problem p304.pddl --seed 2
-p305.pddl 72 40 80 --problem p305.pddl --seed 3
-p306.pddl 76 20 80 --problem p306.pddl --seed 1
-p307.pddl 76 20 80 --problem p307.pddl --seed 2
-p308.pddl 76 20 80 --problem p308.pddl --seed 3
-p309.pddl 76 24 80 --problem p309.pddl --seed 1
-p310.pddl 76 24 80 --problem p310.pddl --seed 2
-p311.pddl 76 24 80 --problem p311.pddl --seed 3
-p312.pddl 76 28 80 --problem p312.pddl --seed 1
-p313.pddl 76 28 80 --problem p313.pddl --seed 2
-p314.pddl 76 28 80 --problem p314.pddl --seed 3
-p315.pddl 76 32 80 --problem p315.pddl --seed 1
-p316.pddl 76 32 80 --problem p316.pddl --seed 2
-p317.pddl 76 32 80 --problem p317.pddl --seed 3
-p318.pddl 76 36 80 --problem p318.pddl --seed 1
-p319.pddl 76 36 80 --problem p319.pddl --seed 2
-p320.pddl 76 36 80 --problem p320.pddl --seed 3
-p321.pddl 76 40 80 --problem p321.pddl --seed 1
-p322.pddl 76 40 80 --problem p322.pddl --seed 2
-p323.pddl 76 40 80 --problem p323.pddl --seed 3
-p324.pddl 50 38 80 --problem p324.pddl --seed 1
-p325.pddl 50 38 80 --problem p325.pddl --seed 2
-p326.pddl 50 38 80 --problem p326.pddl --seed 3
-p327.pddl 50 42 80 --problem p327.pddl --seed 1
-p328.pddl 50 42 80 --problem p328.pddl --seed 2
-p329.pddl 50 42 80 --problem p329.pddl --seed 3
-p330.pddl 50 46 80 --problem p330.pddl --seed 1
-p331.pddl 50 46 80 --problem p331.pddl --seed 2
-p332.pddl 50 46 80 --problem p332.pddl --seed 3
-p333.pddl 54 38 80 --problem p333.pddl --seed 1
-p334.pddl 54 38 80 --problem p334.pddl --seed 2
-p335.pddl 54 38 80 --problem p335.pddl --seed 3
-p336.pddl 54 42 80 --problem p336.pddl --seed 1
-p337.pddl 54 42 80 --problem p337.pddl --seed 2
-p338.pddl 54 42 80 --problem p338.pddl --seed 3
-p339.pddl 54 46 80 --problem p339.pddl --seed 1
-p340.pddl 54 46 80 --problem p340.pddl --seed 2
-p341.pddl 54 46 80 --problem p341.pddl --seed 3
-p342.pddl 58 38 80 --problem p342.pddl --seed 1
-p343.pddl 58 38 80 --problem p343.pddl --seed 2
-p344.pddl 58 38 80 --problem p344.pddl --seed 3
-p345.pddl 58 42 80 --problem p345.pddl --seed 1
-p346.pddl 58 42 80 --problem p346.pddl --seed 2
-p347.pddl 58 42 80 --problem p347.pddl --seed 3
-p348.pddl 58 46 80 --problem p348.pddl --seed 1
-p349.pddl 58 46 80 --problem p349.pddl --seed 2
-p350.pddl 58 46 80 --problem p350.pddl --seed 3
-p351.pddl 62 38 80 --problem p351.pddl --seed 1
-p352.pddl 62 38 80 --problem p352.pddl --seed 2
-p353.pddl 62 38 80 --problem p353.pddl --seed 3
-p354.pddl 62 42 80 --problem p354.pddl --seed 1
-p355.pddl 62 42 80 --problem p355.pddl --seed 2
-p356.pddl 62 42 80 --problem p356.pddl --seed 3
-p357.pddl 62 46 80 --problem p357.pddl --seed 1
-p358.pddl 62 46 80 --problem p358.pddl --seed 2
-p359.pddl 62 46 80 --problem p359.pddl --seed 3
-p360.pddl 66 38 80 --problem p360.pddl --seed 1
-p361.pddl 66 38 80 --problem p361.pddl --seed 2
-p362.pddl 66 38 80 --problem p362.pddl --seed 3
-p363.pddl 66 42 80 --problem p363.pddl --seed 1
-p364.pddl 66 42 80 --problem p364.pddl --seed 2
-p365.pddl 66 42 80 --problem p365.pddl --seed 3
-p366.pddl 66 46 80 --problem p366.pddl --seed 1
-p367.pddl 66 46 80 --problem p367.pddl --seed 2
-p368.pddl 66 46 80 --problem p368.pddl --seed 3
-p369.pddl 70 38 80 --problem p369.pddl --seed 1
-p370.pddl 70 38 80 --problem p370.pddl --seed 2
-p371.pddl 70 38 80 --problem p371.pddl --seed 3
-p372.pddl 70 42 80 --problem p372.pddl --seed 1
-p373.pddl 70 42 80 --problem p373.pddl --seed 2
-p374.pddl 70 42 80 --problem p374.pddl --seed 3
-p375.pddl 70 46 80 --problem p375.pddl --seed 1
-p376.pddl 70 46 80 --problem p376.pddl --seed 2
-p377.pddl 70 46 80 --problem p377.pddl --seed 3
+p0.pddl --domain domain_p0.pddl 8 20 80 --problem p0.pddl --seed 1
+p1.pddl --domain domain_p1.pddl 8 20 80 --problem p1.pddl --seed 2
+p2.pddl --domain domain_p2.pddl 8 20 80 --problem p2.pddl --seed 3
+p3.pddl --domain domain_p3.pddl 8 24 80 --problem p3.pddl --seed 1
+p4.pddl --domain domain_p4.pddl 8 24 80 --problem p4.pddl --seed 2
+p5.pddl --domain domain_p5.pddl 8 24 80 --problem p5.pddl --seed 3
+p6.pddl --domain domain_p6.pddl 8 28 80 --problem p6.pddl --seed 1
+p7.pddl --domain domain_p7.pddl 8 28 80 --problem p7.pddl --seed 2
+p8.pddl --domain domain_p8.pddl 8 28 80 --problem p8.pddl --seed 3
+p9.pddl --domain domain_p9.pddl 8 32 80 --problem p9.pddl --seed 1
+p10.pddl --domain domain_p10.pddl 8 32 80 --problem p10.pddl --seed 2
+p11.pddl --domain domain_p11.pddl 8 32 80 --problem p11.pddl --seed 3
+p12.pddl --domain domain_p12.pddl 8 36 80 --problem p12.pddl --seed 1
+p13.pddl --domain domain_p13.pddl 8 36 80 --problem p13.pddl --seed 2
+p14.pddl --domain domain_p14.pddl 8 36 80 --problem p14.pddl --seed 3
+p15.pddl --domain domain_p15.pddl 8 40 80 --problem p15.pddl --seed 1
+p16.pddl --domain domain_p16.pddl 8 40 80 --problem p16.pddl --seed 2
+p17.pddl --domain domain_p17.pddl 8 40 80 --problem p17.pddl --seed 3
+p18.pddl --domain domain_p18.pddl 12 20 80 --problem p18.pddl --seed 1
+p19.pddl --domain domain_p19.pddl 12 20 80 --problem p19.pddl --seed 2
+p20.pddl --domain domain_p20.pddl 12 20 80 --problem p20.pddl --seed 3
+p21.pddl --domain domain_p21.pddl 12 24 80 --problem p21.pddl --seed 1
+p22.pddl --domain domain_p22.pddl 12 24 80 --problem p22.pddl --seed 2
+p23.pddl --domain domain_p23.pddl 12 24 80 --problem p23.pddl --seed 3
+p24.pddl --domain domain_p24.pddl 12 28 80 --problem p24.pddl --seed 1
+p25.pddl --domain domain_p25.pddl 12 28 80 --problem p25.pddl --seed 2
+p26.pddl --domain domain_p26.pddl 12 28 80 --problem p26.pddl --seed 3
+p27.pddl --domain domain_p27.pddl 12 32 80 --problem p27.pddl --seed 1
+p28.pddl --domain domain_p28.pddl 12 32 80 --problem p28.pddl --seed 2
+p29.pddl --domain domain_p29.pddl 12 32 80 --problem p29.pddl --seed 3
+p30.pddl --domain domain_p30.pddl 12 36 80 --problem p30.pddl --seed 1
+p31.pddl --domain domain_p31.pddl 12 36 80 --problem p31.pddl --seed 2
+p32.pddl --domain domain_p32.pddl 12 36 80 --problem p32.pddl --seed 3
+p33.pddl --domain domain_p33.pddl 12 40 80 --problem p33.pddl --seed 1
+p34.pddl --domain domain_p34.pddl 12 40 80 --problem p34.pddl --seed 2
+p35.pddl --domain domain_p35.pddl 12 40 80 --problem p35.pddl --seed 3
+p36.pddl --domain domain_p36.pddl 16 20 80 --problem p36.pddl --seed 1
+p37.pddl --domain domain_p37.pddl 16 20 80 --problem p37.pddl --seed 2
+p38.pddl --domain domain_p38.pddl 16 20 80 --problem p38.pddl --seed 3
+p39.pddl --domain domain_p39.pddl 16 24 80 --problem p39.pddl --seed 1
+p40.pddl --domain domain_p40.pddl 16 24 80 --problem p40.pddl --seed 2
+p41.pddl --domain domain_p41.pddl 16 24 80 --problem p41.pddl --seed 3
+p42.pddl --domain domain_p42.pddl 16 28 80 --problem p42.pddl --seed 1
+p43.pddl --domain domain_p43.pddl 16 28 80 --problem p43.pddl --seed 2
+p44.pddl --domain domain_p44.pddl 16 28 80 --problem p44.pddl --seed 3
+p45.pddl --domain domain_p45.pddl 16 32 80 --problem p45.pddl --seed 1
+p46.pddl --domain domain_p46.pddl 16 32 80 --problem p46.pddl --seed 2
+p47.pddl --domain domain_p47.pddl 16 32 80 --problem p47.pddl --seed 3
+p48.pddl --domain domain_p48.pddl 16 36 80 --problem p48.pddl --seed 1
+p49.pddl --domain domain_p49.pddl 16 36 80 --problem p49.pddl --seed 2
+p50.pddl --domain domain_p50.pddl 16 36 80 --problem p50.pddl --seed 3
+p51.pddl --domain domain_p51.pddl 16 40 80 --problem p51.pddl --seed 1
+p52.pddl --domain domain_p52.pddl 16 40 80 --problem p52.pddl --seed 2
+p53.pddl --domain domain_p53.pddl 16 40 80 --problem p53.pddl --seed 3
+p54.pddl --domain domain_p54.pddl 20 20 80 --problem p54.pddl --seed 1
+p55.pddl --domain domain_p55.pddl 20 20 80 --problem p55.pddl --seed 2
+p56.pddl --domain domain_p56.pddl 20 20 80 --problem p56.pddl --seed 3
+p57.pddl --domain domain_p57.pddl 20 24 80 --problem p57.pddl --seed 1
+p58.pddl --domain domain_p58.pddl 20 24 80 --problem p58.pddl --seed 2
+p59.pddl --domain domain_p59.pddl 20 24 80 --problem p59.pddl --seed 3
+p60.pddl --domain domain_p60.pddl 20 28 80 --problem p60.pddl --seed 1
+p61.pddl --domain domain_p61.pddl 20 28 80 --problem p61.pddl --seed 2
+p62.pddl --domain domain_p62.pddl 20 28 80 --problem p62.pddl --seed 3
+p63.pddl --domain domain_p63.pddl 20 32 80 --problem p63.pddl --seed 1
+p64.pddl --domain domain_p64.pddl 20 32 80 --problem p64.pddl --seed 2
+p65.pddl --domain domain_p65.pddl 20 32 80 --problem p65.pddl --seed 3
+p66.pddl --domain domain_p66.pddl 20 36 80 --problem p66.pddl --seed 1
+p67.pddl --domain domain_p67.pddl 20 36 80 --problem p67.pddl --seed 2
+p68.pddl --domain domain_p68.pddl 20 36 80 --problem p68.pddl --seed 3
+p69.pddl --domain domain_p69.pddl 20 40 80 --problem p69.pddl --seed 1
+p70.pddl --domain domain_p70.pddl 20 40 80 --problem p70.pddl --seed 2
+p71.pddl --domain domain_p71.pddl 20 40 80 --problem p71.pddl --seed 3
+p72.pddl --domain domain_p72.pddl 24 20 80 --problem p72.pddl --seed 1
+p73.pddl --domain domain_p73.pddl 24 20 80 --problem p73.pddl --seed 2
+p74.pddl --domain domain_p74.pddl 24 20 80 --problem p74.pddl --seed 3
+p75.pddl --domain domain_p75.pddl 24 24 80 --problem p75.pddl --seed 1
+p76.pddl --domain domain_p76.pddl 24 24 80 --problem p76.pddl --seed 2
+p77.pddl --domain domain_p77.pddl 24 24 80 --problem p77.pddl --seed 3
+p78.pddl --domain domain_p78.pddl 24 28 80 --problem p78.pddl --seed 1
+p79.pddl --domain domain_p79.pddl 24 28 80 --problem p79.pddl --seed 2
+p80.pddl --domain domain_p80.pddl 24 28 80 --problem p80.pddl --seed 3
+p81.pddl --domain domain_p81.pddl 24 32 80 --problem p81.pddl --seed 1
+p82.pddl --domain domain_p82.pddl 24 32 80 --problem p82.pddl --seed 2
+p83.pddl --domain domain_p83.pddl 24 32 80 --problem p83.pddl --seed 3
+p84.pddl --domain domain_p84.pddl 24 36 80 --problem p84.pddl --seed 1
+p85.pddl --domain domain_p85.pddl 24 36 80 --problem p85.pddl --seed 2
+p86.pddl --domain domain_p86.pddl 24 36 80 --problem p86.pddl --seed 3
+p87.pddl --domain domain_p87.pddl 24 40 80 --problem p87.pddl --seed 1
+p88.pddl --domain domain_p88.pddl 24 40 80 --problem p88.pddl --seed 2
+p89.pddl --domain domain_p89.pddl 24 40 80 --problem p89.pddl --seed 3
+p90.pddl --domain domain_p90.pddl 28 20 80 --problem p90.pddl --seed 1
+p91.pddl --domain domain_p91.pddl 28 20 80 --problem p91.pddl --seed 2
+p92.pddl --domain domain_p92.pddl 28 20 80 --problem p92.pddl --seed 3
+p93.pddl --domain domain_p93.pddl 28 24 80 --problem p93.pddl --seed 1
+p94.pddl --domain domain_p94.pddl 28 24 80 --problem p94.pddl --seed 2
+p95.pddl --domain domain_p95.pddl 28 24 80 --problem p95.pddl --seed 3
+p96.pddl --domain domain_p96.pddl 28 28 80 --problem p96.pddl --seed 1
+p97.pddl --domain domain_p97.pddl 28 28 80 --problem p97.pddl --seed 2
+p98.pddl --domain domain_p98.pddl 28 28 80 --problem p98.pddl --seed 3
+p99.pddl --domain domain_p99.pddl 28 32 80 --problem p99.pddl --seed 1
+p100.pddl --domain domain_p100.pddl 28 32 80 --problem p100.pddl --seed 2
+p101.pddl --domain domain_p101.pddl 28 32 80 --problem p101.pddl --seed 3
+p102.pddl --domain domain_p102.pddl 28 36 80 --problem p102.pddl --seed 1
+p103.pddl --domain domain_p103.pddl 28 36 80 --problem p103.pddl --seed 2
+p104.pddl --domain domain_p104.pddl 28 36 80 --problem p104.pddl --seed 3
+p105.pddl --domain domain_p105.pddl 28 40 80 --problem p105.pddl --seed 1
+p106.pddl --domain domain_p106.pddl 28 40 80 --problem p106.pddl --seed 2
+p107.pddl --domain domain_p107.pddl 28 40 80 --problem p107.pddl --seed 3
+p108.pddl --domain domain_p108.pddl 32 20 80 --problem p108.pddl --seed 1
+p109.pddl --domain domain_p109.pddl 32 20 80 --problem p109.pddl --seed 2
+p110.pddl --domain domain_p110.pddl 32 20 80 --problem p110.pddl --seed 3
+p111.pddl --domain domain_p111.pddl 32 24 80 --problem p111.pddl --seed 1
+p112.pddl --domain domain_p112.pddl 32 24 80 --problem p112.pddl --seed 2
+p113.pddl --domain domain_p113.pddl 32 24 80 --problem p113.pddl --seed 3
+p114.pddl --domain domain_p114.pddl 32 28 80 --problem p114.pddl --seed 1
+p115.pddl --domain domain_p115.pddl 32 28 80 --problem p115.pddl --seed 2
+p116.pddl --domain domain_p116.pddl 32 28 80 --problem p116.pddl --seed 3
+p117.pddl --domain domain_p117.pddl 32 32 80 --problem p117.pddl --seed 1
+p118.pddl --domain domain_p118.pddl 32 32 80 --problem p118.pddl --seed 2
+p119.pddl --domain domain_p119.pddl 32 32 80 --problem p119.pddl --seed 3
+p120.pddl --domain domain_p120.pddl 32 36 80 --problem p120.pddl --seed 1
+p121.pddl --domain domain_p121.pddl 32 36 80 --problem p121.pddl --seed 2
+p122.pddl --domain domain_p122.pddl 32 36 80 --problem p122.pddl --seed 3
+p123.pddl --domain domain_p123.pddl 32 40 80 --problem p123.pddl --seed 1
+p124.pddl --domain domain_p124.pddl 32 40 80 --problem p124.pddl --seed 2
+p125.pddl --domain domain_p125.pddl 32 40 80 --problem p125.pddl --seed 3
+p126.pddl --domain domain_p126.pddl 36 20 80 --problem p126.pddl --seed 1
+p127.pddl --domain domain_p127.pddl 36 20 80 --problem p127.pddl --seed 2
+p128.pddl --domain domain_p128.pddl 36 20 80 --problem p128.pddl --seed 3
+p129.pddl --domain domain_p129.pddl 36 24 80 --problem p129.pddl --seed 1
+p130.pddl --domain domain_p130.pddl 36 24 80 --problem p130.pddl --seed 2
+p131.pddl --domain domain_p131.pddl 36 24 80 --problem p131.pddl --seed 3
+p132.pddl --domain domain_p132.pddl 36 28 80 --problem p132.pddl --seed 1
+p133.pddl --domain domain_p133.pddl 36 28 80 --problem p133.pddl --seed 2
+p134.pddl --domain domain_p134.pddl 36 28 80 --problem p134.pddl --seed 3
+p135.pddl --domain domain_p135.pddl 36 32 80 --problem p135.pddl --seed 1
+p136.pddl --domain domain_p136.pddl 36 32 80 --problem p136.pddl --seed 2
+p137.pddl --domain domain_p137.pddl 36 32 80 --problem p137.pddl --seed 3
+p138.pddl --domain domain_p138.pddl 36 36 80 --problem p138.pddl --seed 1
+p139.pddl --domain domain_p139.pddl 36 36 80 --problem p139.pddl --seed 2
+p140.pddl --domain domain_p140.pddl 36 36 80 --problem p140.pddl --seed 3
+p141.pddl --domain domain_p141.pddl 36 40 80 --problem p141.pddl --seed 1
+p142.pddl --domain domain_p142.pddl 36 40 80 --problem p142.pddl --seed 2
+p143.pddl --domain domain_p143.pddl 36 40 80 --problem p143.pddl --seed 3
+p144.pddl --domain domain_p144.pddl 40 20 80 --problem p144.pddl --seed 1
+p145.pddl --domain domain_p145.pddl 40 20 80 --problem p145.pddl --seed 2
+p146.pddl --domain domain_p146.pddl 40 20 80 --problem p146.pddl --seed 3
+p147.pddl --domain domain_p147.pddl 40 24 80 --problem p147.pddl --seed 1
+p148.pddl --domain domain_p148.pddl 40 24 80 --problem p148.pddl --seed 2
+p149.pddl --domain domain_p149.pddl 40 24 80 --problem p149.pddl --seed 3
+p150.pddl --domain domain_p150.pddl 40 28 80 --problem p150.pddl --seed 1
+p151.pddl --domain domain_p151.pddl 40 28 80 --problem p151.pddl --seed 2
+p152.pddl --domain domain_p152.pddl 40 28 80 --problem p152.pddl --seed 3
+p153.pddl --domain domain_p153.pddl 40 32 80 --problem p153.pddl --seed 1
+p154.pddl --domain domain_p154.pddl 40 32 80 --problem p154.pddl --seed 2
+p155.pddl --domain domain_p155.pddl 40 32 80 --problem p155.pddl --seed 3
+p156.pddl --domain domain_p156.pddl 40 36 80 --problem p156.pddl --seed 1
+p157.pddl --domain domain_p157.pddl 40 36 80 --problem p157.pddl --seed 2
+p158.pddl --domain domain_p158.pddl 40 36 80 --problem p158.pddl --seed 3
+p159.pddl --domain domain_p159.pddl 40 40 80 --problem p159.pddl --seed 1
+p160.pddl --domain domain_p160.pddl 40 40 80 --problem p160.pddl --seed 2
+p161.pddl --domain domain_p161.pddl 40 40 80 --problem p161.pddl --seed 3
+p162.pddl --domain domain_p162.pddl 44 20 80 --problem p162.pddl --seed 1
+p163.pddl --domain domain_p163.pddl 44 20 80 --problem p163.pddl --seed 2
+p164.pddl --domain domain_p164.pddl 44 20 80 --problem p164.pddl --seed 3
+p165.pddl --domain domain_p165.pddl 44 24 80 --problem p165.pddl --seed 1
+p166.pddl --domain domain_p166.pddl 44 24 80 --problem p166.pddl --seed 2
+p167.pddl --domain domain_p167.pddl 44 24 80 --problem p167.pddl --seed 3
+p168.pddl --domain domain_p168.pddl 44 28 80 --problem p168.pddl --seed 1
+p169.pddl --domain domain_p169.pddl 44 28 80 --problem p169.pddl --seed 2
+p170.pddl --domain domain_p170.pddl 44 28 80 --problem p170.pddl --seed 3
+p171.pddl --domain domain_p171.pddl 44 32 80 --problem p171.pddl --seed 1
+p172.pddl --domain domain_p172.pddl 44 32 80 --problem p172.pddl --seed 2
+p173.pddl --domain domain_p173.pddl 44 32 80 --problem p173.pddl --seed 3
+p174.pddl --domain domain_p174.pddl 44 36 80 --problem p174.pddl --seed 1
+p175.pddl --domain domain_p175.pddl 44 36 80 --problem p175.pddl --seed 2
+p176.pddl --domain domain_p176.pddl 44 36 80 --problem p176.pddl --seed 3
+p177.pddl --domain domain_p177.pddl 44 40 80 --problem p177.pddl --seed 1
+p178.pddl --domain domain_p178.pddl 44 40 80 --problem p178.pddl --seed 2
+p179.pddl --domain domain_p179.pddl 44 40 80 --problem p179.pddl --seed 3
+p180.pddl --domain domain_p180.pddl 48 20 80 --problem p180.pddl --seed 1
+p181.pddl --domain domain_p181.pddl 48 20 80 --problem p181.pddl --seed 2
+p182.pddl --domain domain_p182.pddl 48 20 80 --problem p182.pddl --seed 3
+p183.pddl --domain domain_p183.pddl 48 24 80 --problem p183.pddl --seed 1
+p184.pddl --domain domain_p184.pddl 48 24 80 --problem p184.pddl --seed 2
+p185.pddl --domain domain_p185.pddl 48 24 80 --problem p185.pddl --seed 3
+p186.pddl --domain domain_p186.pddl 48 28 80 --problem p186.pddl --seed 1
+p187.pddl --domain domain_p187.pddl 48 28 80 --problem p187.pddl --seed 2
+p188.pddl --domain domain_p188.pddl 48 28 80 --problem p188.pddl --seed 3
+p189.pddl --domain domain_p189.pddl 48 32 80 --problem p189.pddl --seed 1
+p190.pddl --domain domain_p190.pddl 48 32 80 --problem p190.pddl --seed 2
+p191.pddl --domain domain_p191.pddl 48 32 80 --problem p191.pddl --seed 3
+p192.pddl --domain domain_p192.pddl 48 36 80 --problem p192.pddl --seed 1
+p193.pddl --domain domain_p193.pddl 48 36 80 --problem p193.pddl --seed 2
+p194.pddl --domain domain_p194.pddl 48 36 80 --problem p194.pddl --seed 3
+p195.pddl --domain domain_p195.pddl 48 40 80 --problem p195.pddl --seed 1
+p196.pddl --domain domain_p196.pddl 48 40 80 --problem p196.pddl --seed 2
+p197.pddl --domain domain_p197.pddl 48 40 80 --problem p197.pddl --seed 3
+p198.pddl --domain domain_p198.pddl 52 20 80 --problem p198.pddl --seed 1
+p199.pddl --domain domain_p199.pddl 52 20 80 --problem p199.pddl --seed 2
+p200.pddl --domain domain_p200.pddl 52 20 80 --problem p200.pddl --seed 3
+p201.pddl --domain domain_p201.pddl 52 24 80 --problem p201.pddl --seed 1
+p202.pddl --domain domain_p202.pddl 52 24 80 --problem p202.pddl --seed 2
+p203.pddl --domain domain_p203.pddl 52 24 80 --problem p203.pddl --seed 3
+p204.pddl --domain domain_p204.pddl 52 28 80 --problem p204.pddl --seed 1
+p205.pddl --domain domain_p205.pddl 52 28 80 --problem p205.pddl --seed 2
+p206.pddl --domain domain_p206.pddl 52 28 80 --problem p206.pddl --seed 3
+p207.pddl --domain domain_p207.pddl 52 32 80 --problem p207.pddl --seed 1
+p208.pddl --domain domain_p208.pddl 52 32 80 --problem p208.pddl --seed 2
+p209.pddl --domain domain_p209.pddl 52 32 80 --problem p209.pddl --seed 3
+p210.pddl --domain domain_p210.pddl 52 36 80 --problem p210.pddl --seed 1
+p211.pddl --domain domain_p211.pddl 52 36 80 --problem p211.pddl --seed 2
+p212.pddl --domain domain_p212.pddl 52 36 80 --problem p212.pddl --seed 3
+p213.pddl --domain domain_p213.pddl 52 40 80 --problem p213.pddl --seed 1
+p214.pddl --domain domain_p214.pddl 52 40 80 --problem p214.pddl --seed 2
+p215.pddl --domain domain_p215.pddl 52 40 80 --problem p215.pddl --seed 3
+p216.pddl --domain domain_p216.pddl 56 20 80 --problem p216.pddl --seed 1
+p217.pddl --domain domain_p217.pddl 56 20 80 --problem p217.pddl --seed 2
+p218.pddl --domain domain_p218.pddl 56 20 80 --problem p218.pddl --seed 3
+p219.pddl --domain domain_p219.pddl 56 24 80 --problem p219.pddl --seed 1
+p220.pddl --domain domain_p220.pddl 56 24 80 --problem p220.pddl --seed 2
+p221.pddl --domain domain_p221.pddl 56 24 80 --problem p221.pddl --seed 3
+p222.pddl --domain domain_p222.pddl 56 28 80 --problem p222.pddl --seed 1
+p223.pddl --domain domain_p223.pddl 56 28 80 --problem p223.pddl --seed 2
+p224.pddl --domain domain_p224.pddl 56 28 80 --problem p224.pddl --seed 3
+p225.pddl --domain domain_p225.pddl 56 32 80 --problem p225.pddl --seed 1
+p226.pddl --domain domain_p226.pddl 56 32 80 --problem p226.pddl --seed 2
+p227.pddl --domain domain_p227.pddl 56 32 80 --problem p227.pddl --seed 3
+p228.pddl --domain domain_p228.pddl 56 36 80 --problem p228.pddl --seed 1
+p229.pddl --domain domain_p229.pddl 56 36 80 --problem p229.pddl --seed 2
+p230.pddl --domain domain_p230.pddl 56 36 80 --problem p230.pddl --seed 3
+p231.pddl --domain domain_p231.pddl 56 40 80 --problem p231.pddl --seed 1
+p232.pddl --domain domain_p232.pddl 56 40 80 --problem p232.pddl --seed 2
+p233.pddl --domain domain_p233.pddl 56 40 80 --problem p233.pddl --seed 3
+p234.pddl --domain domain_p234.pddl 60 20 80 --problem p234.pddl --seed 1
+p235.pddl --domain domain_p235.pddl 60 20 80 --problem p235.pddl --seed 2
+p236.pddl --domain domain_p236.pddl 60 20 80 --problem p236.pddl --seed 3
+p237.pddl --domain domain_p237.pddl 60 24 80 --problem p237.pddl --seed 1
+p238.pddl --domain domain_p238.pddl 60 24 80 --problem p238.pddl --seed 2
+p239.pddl --domain domain_p239.pddl 60 24 80 --problem p239.pddl --seed 3
+p240.pddl --domain domain_p240.pddl 60 28 80 --problem p240.pddl --seed 1
+p241.pddl --domain domain_p241.pddl 60 28 80 --problem p241.pddl --seed 2
+p242.pddl --domain domain_p242.pddl 60 28 80 --problem p242.pddl --seed 3
+p243.pddl --domain domain_p243.pddl 60 32 80 --problem p243.pddl --seed 1
+p244.pddl --domain domain_p244.pddl 60 32 80 --problem p244.pddl --seed 2
+p245.pddl --domain domain_p245.pddl 60 32 80 --problem p245.pddl --seed 3
+p246.pddl --domain domain_p246.pddl 60 36 80 --problem p246.pddl --seed 1
+p247.pddl --domain domain_p247.pddl 60 36 80 --problem p247.pddl --seed 2
+p248.pddl --domain domain_p248.pddl 60 36 80 --problem p248.pddl --seed 3
+p249.pddl --domain domain_p249.pddl 60 40 80 --problem p249.pddl --seed 1
+p250.pddl --domain domain_p250.pddl 60 40 80 --problem p250.pddl --seed 2
+p251.pddl --domain domain_p251.pddl 60 40 80 --problem p251.pddl --seed 3
+p252.pddl --domain domain_p252.pddl 64 20 80 --problem p252.pddl --seed 1
+p253.pddl --domain domain_p253.pddl 64 20 80 --problem p253.pddl --seed 2
+p254.pddl --domain domain_p254.pddl 64 20 80 --problem p254.pddl --seed 3
+p255.pddl --domain domain_p255.pddl 64 24 80 --problem p255.pddl --seed 1
+p256.pddl --domain domain_p256.pddl 64 24 80 --problem p256.pddl --seed 2
+p257.pddl --domain domain_p257.pddl 64 24 80 --problem p257.pddl --seed 3
+p258.pddl --domain domain_p258.pddl 64 28 80 --problem p258.pddl --seed 1
+p259.pddl --domain domain_p259.pddl 64 28 80 --problem p259.pddl --seed 2
+p260.pddl --domain domain_p260.pddl 64 28 80 --problem p260.pddl --seed 3
+p261.pddl --domain domain_p261.pddl 64 32 80 --problem p261.pddl --seed 1
+p262.pddl --domain domain_p262.pddl 64 32 80 --problem p262.pddl --seed 2
+p263.pddl --domain domain_p263.pddl 64 32 80 --problem p263.pddl --seed 3
+p264.pddl --domain domain_p264.pddl 64 36 80 --problem p264.pddl --seed 1
+p265.pddl --domain domain_p265.pddl 64 36 80 --problem p265.pddl --seed 2
+p266.pddl --domain domain_p266.pddl 64 36 80 --problem p266.pddl --seed 3
+p267.pddl --domain domain_p267.pddl 64 40 80 --problem p267.pddl --seed 1
+p268.pddl --domain domain_p268.pddl 64 40 80 --problem p268.pddl --seed 2
+p269.pddl --domain domain_p269.pddl 64 40 80 --problem p269.pddl --seed 3
+p270.pddl --domain domain_p270.pddl 68 20 80 --problem p270.pddl --seed 1
+p271.pddl --domain domain_p271.pddl 68 20 80 --problem p271.pddl --seed 2
+p272.pddl --domain domain_p272.pddl 68 20 80 --problem p272.pddl --seed 3
+p273.pddl --domain domain_p273.pddl 68 24 80 --problem p273.pddl --seed 1
+p274.pddl --domain domain_p274.pddl 68 24 80 --problem p274.pddl --seed 2
+p275.pddl --domain domain_p275.pddl 68 24 80 --problem p275.pddl --seed 3
+p276.pddl --domain domain_p276.pddl 68 28 80 --problem p276.pddl --seed 1
+p277.pddl --domain domain_p277.pddl 68 28 80 --problem p277.pddl --seed 2
+p278.pddl --domain domain_p278.pddl 68 28 80 --problem p278.pddl --seed 3
+p279.pddl --domain domain_p279.pddl 68 32 80 --problem p279.pddl --seed 1
+p280.pddl --domain domain_p280.pddl 68 32 80 --problem p280.pddl --seed 2
+p281.pddl --domain domain_p281.pddl 68 32 80 --problem p281.pddl --seed 3
+p282.pddl --domain domain_p282.pddl 68 36 80 --problem p282.pddl --seed 1
+p283.pddl --domain domain_p283.pddl 68 36 80 --problem p283.pddl --seed 2
+p284.pddl --domain domain_p284.pddl 68 36 80 --problem p284.pddl --seed 3
+p285.pddl --domain domain_p285.pddl 68 40 80 --problem p285.pddl --seed 1
+p286.pddl --domain domain_p286.pddl 68 40 80 --problem p286.pddl --seed 2
+p287.pddl --domain domain_p287.pddl 68 40 80 --problem p287.pddl --seed 3
+p288.pddl --domain domain_p288.pddl 72 20 80 --problem p288.pddl --seed 1
+p289.pddl --domain domain_p289.pddl 72 20 80 --problem p289.pddl --seed 2
+p290.pddl --domain domain_p290.pddl 72 20 80 --problem p290.pddl --seed 3
+p291.pddl --domain domain_p291.pddl 72 24 80 --problem p291.pddl --seed 1
+p292.pddl --domain domain_p292.pddl 72 24 80 --problem p292.pddl --seed 2
+p293.pddl --domain domain_p293.pddl 72 24 80 --problem p293.pddl --seed 3
+p294.pddl --domain domain_p294.pddl 72 28 80 --problem p294.pddl --seed 1
+p295.pddl --domain domain_p295.pddl 72 28 80 --problem p295.pddl --seed 2
+p296.pddl --domain domain_p296.pddl 72 28 80 --problem p296.pddl --seed 3
+p297.pddl --domain domain_p297.pddl 72 32 80 --problem p297.pddl --seed 1
+p298.pddl --domain domain_p298.pddl 72 32 80 --problem p298.pddl --seed 2
+p299.pddl --domain domain_p299.pddl 72 32 80 --problem p299.pddl --seed 3
+p300.pddl --domain domain_p300.pddl 72 36 80 --problem p300.pddl --seed 1
+p301.pddl --domain domain_p301.pddl 72 36 80 --problem p301.pddl --seed 2
+p302.pddl --domain domain_p302.pddl 72 36 80 --problem p302.pddl --seed 3
+p303.pddl --domain domain_p303.pddl 72 40 80 --problem p303.pddl --seed 1
+p304.pddl --domain domain_p304.pddl 72 40 80 --problem p304.pddl --seed 2
+p305.pddl --domain domain_p305.pddl 72 40 80 --problem p305.pddl --seed 3
+p306.pddl --domain domain_p306.pddl 76 20 80 --problem p306.pddl --seed 1
+p307.pddl --domain domain_p307.pddl 76 20 80 --problem p307.pddl --seed 2
+p308.pddl --domain domain_p308.pddl 76 20 80 --problem p308.pddl --seed 3
+p309.pddl --domain domain_p309.pddl 76 24 80 --problem p309.pddl --seed 1
+p310.pddl --domain domain_p310.pddl 76 24 80 --problem p310.pddl --seed 2
+p311.pddl --domain domain_p311.pddl 76 24 80 --problem p311.pddl --seed 3
+p312.pddl --domain domain_p312.pddl 76 28 80 --problem p312.pddl --seed 1
+p313.pddl --domain domain_p313.pddl 76 28 80 --problem p313.pddl --seed 2
+p314.pddl --domain domain_p314.pddl 76 28 80 --problem p314.pddl --seed 3
+p315.pddl --domain domain_p315.pddl 76 32 80 --problem p315.pddl --seed 1
+p316.pddl --domain domain_p316.pddl 76 32 80 --problem p316.pddl --seed 2
+p317.pddl --domain domain_p317.pddl 76 32 80 --problem p317.pddl --seed 3
+p318.pddl --domain domain_p318.pddl 76 36 80 --problem p318.pddl --seed 1
+p319.pddl --domain domain_p319.pddl 76 36 80 --problem p319.pddl --seed 2
+p320.pddl --domain domain_p320.pddl 76 36 80 --problem p320.pddl --seed 3
+p321.pddl --domain domain_p321.pddl 76 40 80 --problem p321.pddl --seed 1
+p322.pddl --domain domain_p322.pddl 76 40 80 --problem p322.pddl --seed 2
+p323.pddl --domain domain_p323.pddl 76 40 80 --problem p323.pddl --seed 3
+p324.pddl --domain domain_p324.pddl 50 38 80 --problem p324.pddl --seed 1
+p325.pddl --domain domain_p325.pddl 50 38 80 --problem p325.pddl --seed 2
+p326.pddl --domain domain_p326.pddl 50 38 80 --problem p326.pddl --seed 3
+p327.pddl --domain domain_p327.pddl 50 42 80 --problem p327.pddl --seed 1
+p328.pddl --domain domain_p328.pddl 50 42 80 --problem p328.pddl --seed 2
+p329.pddl --domain domain_p329.pddl 50 42 80 --problem p329.pddl --seed 3
+p330.pddl --domain domain_p330.pddl 50 46 80 --problem p330.pddl --seed 1
+p331.pddl --domain domain_p331.pddl 50 46 80 --problem p331.pddl --seed 2
+p332.pddl --domain domain_p332.pddl 50 46 80 --problem p332.pddl --seed 3
+p333.pddl --domain domain_p333.pddl 54 38 80 --problem p333.pddl --seed 1
+p334.pddl --domain domain_p334.pddl 54 38 80 --problem p334.pddl --seed 2
+p335.pddl --domain domain_p335.pddl 54 38 80 --problem p335.pddl --seed 3
+p336.pddl --domain domain_p336.pddl 54 42 80 --problem p336.pddl --seed 1
+p337.pddl --domain domain_p337.pddl 54 42 80 --problem p337.pddl --seed 2
+p338.pddl --domain domain_p338.pddl 54 42 80 --problem p338.pddl --seed 3
+p339.pddl --domain domain_p339.pddl 54 46 80 --problem p339.pddl --seed 1
+p340.pddl --domain domain_p340.pddl 54 46 80 --problem p340.pddl --seed 2
+p341.pddl --domain domain_p341.pddl 54 46 80 --problem p341.pddl --seed 3
+p342.pddl --domain domain_p342.pddl 58 38 80 --problem p342.pddl --seed 1
+p343.pddl --domain domain_p343.pddl 58 38 80 --problem p343.pddl --seed 2
+p344.pddl --domain domain_p344.pddl 58 38 80 --problem p344.pddl --seed 3
+p345.pddl --domain domain_p345.pddl 58 42 80 --problem p345.pddl --seed 1
+p346.pddl --domain domain_p346.pddl 58 42 80 --problem p346.pddl --seed 2
+p347.pddl --domain domain_p347.pddl 58 42 80 --problem p347.pddl --seed 3
+p348.pddl --domain domain_p348.pddl 58 46 80 --problem p348.pddl --seed 1
+p349.pddl --domain domain_p349.pddl 58 46 80 --problem p349.pddl --seed 2
+p350.pddl --domain domain_p350.pddl 58 46 80 --problem p350.pddl --seed 3
+p351.pddl --domain domain_p351.pddl 62 38 80 --problem p351.pddl --seed 1
+p352.pddl --domain domain_p352.pddl 62 38 80 --problem p352.pddl --seed 2
+p353.pddl --domain domain_p353.pddl 62 38 80 --problem p353.pddl --seed 3
+p354.pddl --domain domain_p354.pddl 62 42 80 --problem p354.pddl --seed 1
+p355.pddl --domain domain_p355.pddl 62 42 80 --problem p355.pddl --seed 2
+p356.pddl --domain domain_p356.pddl 62 42 80 --problem p356.pddl --seed 3
+p357.pddl --domain domain_p357.pddl 62 46 80 --problem p357.pddl --seed 1
+p358.pddl --domain domain_p358.pddl 62 46 80 --problem p358.pddl --seed 2
+p359.pddl --domain domain_p359.pddl 62 46 80 --problem p359.pddl --seed 3
+p360.pddl --domain domain_p360.pddl 66 38 80 --problem p360.pddl --seed 1
+p361.pddl --domain domain_p361.pddl 66 38 80 --problem p361.pddl --seed 2
+p362.pddl --domain domain_p362.pddl 66 38 80 --problem p362.pddl --seed 3
+p363.pddl --domain domain_p363.pddl 66 42 80 --problem p363.pddl --seed 1
+p364.pddl --domain domain_p364.pddl 66 42 80 --problem p364.pddl --seed 2
+p365.pddl --domain domain_p365.pddl 66 42 80 --problem p365.pddl --seed 3
+p366.pddl --domain domain_p366.pddl 66 46 80 --problem p366.pddl --seed 1
+p367.pddl --domain domain_p367.pddl 66 46 80 --problem p367.pddl --seed 2
+p368.pddl --domain domain_p368.pddl 66 46 80 --problem p368.pddl --seed 3
+p369.pddl --domain domain_p369.pddl 70 38 80 --problem p369.pddl --seed 1
+p370.pddl --domain domain_p370.pddl 70 38 80 --problem p370.pddl --seed 2
+p371.pddl --domain domain_p371.pddl 70 38 80 --problem p371.pddl --seed 3
+p372.pddl --domain domain_p372.pddl 70 42 80 --problem p372.pddl --seed 1
+p373.pddl --domain domain_p373.pddl 70 42 80 --problem p373.pddl --seed 2
+p374.pddl --domain domain_p374.pddl 70 42 80 --problem p374.pddl --seed 3
+p375.pddl --domain domain_p375.pddl 70 46 80 --problem p375.pddl --seed 1
+p376.pddl --domain domain_p376.pddl 70 46 80 --problem p376.pddl --seed 2
+p377.pddl --domain domain_p377.pddl 70 46 80 --problem p377.pddl --seed 3

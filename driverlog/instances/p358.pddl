@@ -1,221 +1,127 @@
 (define (problem DLOG-1-1-22)
 	(:domain driverlog)
 	(:objects
-	driver1
-	truck1
-	package1
-	package2
-	package3
-	package4
-	package5
-	package6
-	package7
-	package8
-	package9
-	package10
-	package11
-	package12
-	package13
-	package14
-	package15
-	package16
-	package17
-	package18
-	package19
-	package20
-	package21
-	package22
-	s0
-	s1
-	s2
-	s3
-	s4
-	s5
-	s6
-	s7
-	s8
-	s9
-	s10
-	s11
-	s12
-	s13
-	s14
-	s15
-	s16
-	s17
-	s18
-	s19
-	s20
-	s21
-	s22
-	s23
-	s24
-	p0-3
-	p0-18
-	p1-5
-	p1-15
-	p1-23
-	p3-2
-	p3-10
-	p3-14
-	p3-17
-	p3-18
-	p4-6
-	p4-20
-	p5-22
-	p5-24
-	p6-21
-	p7-0
-	p7-19
-	p8-4
-	p8-5
-	p8-13
-	p9-12
-	p9-20
-	p10-23
-	p11-20
-	p12-7
-	p12-19
-	p12-24
-	p13-2
-	p14-6
-	p14-11
-	p14-16
-	p15-7
-	p16-12
-	p17-22
-	p18-15
-	p19-17
-	p19-18
-	p20-8
-	p21-1
-	p21-9
-	p22-21
-	p23-11
-	p23-18
-	p23-22
-	p24-1
+	driver1 - driver
+	truck1 - truck
+	package1 - obj
+	package2 - obj
+	package3 - obj
+	package4 - obj
+	package5 - obj
+	package6 - obj
+	package7 - obj
+	package8 - obj
+	package9 - obj
+	package10 - obj
+	package11 - obj
+	package12 - obj
+	package13 - obj
+	package14 - obj
+	package15 - obj
+	package16 - obj
+	package17 - obj
+	package18 - obj
+	package19 - obj
+	package20 - obj
+	package21 - obj
+	package22 - obj
+	s0 - location
+	s1 - location
+	s2 - location
+	s3 - location
+	s4 - location
+	s5 - location
+	s6 - location
+	s7 - location
+	s8 - location
+	s9 - location
+	s10 - location
+	s11 - location
+	s12 - location
+	s13 - location
+	s14 - location
+	s15 - location
+	s16 - location
+	s17 - location
+	s18 - location
+	s19 - location
+	s20 - location
+	s21 - location
+	s22 - location
+	s23 - location
+	s24 - location
+	p0-3 - location
+	p0-18 - location
+	p1-5 - location
+	p1-15 - location
+	p1-23 - location
+	p3-2 - location
+	p3-10 - location
+	p3-14 - location
+	p3-17 - location
+	p3-18 - location
+	p4-6 - location
+	p4-20 - location
+	p5-22 - location
+	p5-24 - location
+	p6-21 - location
+	p7-0 - location
+	p7-19 - location
+	p8-4 - location
+	p8-5 - location
+	p8-13 - location
+	p9-12 - location
+	p9-20 - location
+	p10-23 - location
+	p11-20 - location
+	p12-7 - location
+	p12-19 - location
+	p12-24 - location
+	p13-2 - location
+	p14-6 - location
+	p14-11 - location
+	p14-16 - location
+	p15-7 - location
+	p16-12 - location
+	p17-22 - location
+	p18-15 - location
+	p19-17 - location
+	p19-18 - location
+	p20-8 - location
+	p21-1 - location
+	p21-9 - location
+	p22-21 - location
+	p23-11 - location
+	p23-18 - location
+	p23-22 - location
+	p24-1 - location
 	)
 	(:init
 	(at driver1 s22)
-	(DRIVER driver1)
 	(at truck1 s14)
 	(empty truck1)
-	(TRUCK truck1)
 	(at package1 s21)
-	(OBJ package1)
 	(at package2 s21)
-	(OBJ package2)
 	(at package3 s4)
-	(OBJ package3)
 	(at package4 s3)
-	(OBJ package4)
 	(at package5 s20)
-	(OBJ package5)
 	(at package6 s5)
-	(OBJ package6)
 	(at package7 s3)
-	(OBJ package7)
 	(at package8 s23)
-	(OBJ package8)
 	(at package9 s20)
-	(OBJ package9)
 	(at package10 s8)
-	(OBJ package10)
 	(at package11 s15)
-	(OBJ package11)
 	(at package12 s1)
-	(OBJ package12)
 	(at package13 s9)
-	(OBJ package13)
 	(at package14 s2)
-	(OBJ package14)
 	(at package15 s14)
-	(OBJ package15)
 	(at package16 s19)
-	(OBJ package16)
 	(at package17 s22)
-	(OBJ package17)
 	(at package18 s5)
-	(OBJ package18)
 	(at package19 s20)
-	(OBJ package19)
 	(at package20 s8)
-	(OBJ package20)
 	(at package21 s24)
-	(OBJ package21)
 	(at package22 s3)
-	(OBJ package22)
-	(LOCATION s0)
-	(LOCATION s1)
-	(LOCATION s2)
-	(LOCATION s3)
-	(LOCATION s4)
-	(LOCATION s5)
-	(LOCATION s6)
-	(LOCATION s7)
-	(LOCATION s8)
-	(LOCATION s9)
-	(LOCATION s10)
-	(LOCATION s11)
-	(LOCATION s12)
-	(LOCATION s13)
-	(LOCATION s14)
-	(LOCATION s15)
-	(LOCATION s16)
-	(LOCATION s17)
-	(LOCATION s18)
-	(LOCATION s19)
-	(LOCATION s20)
-	(LOCATION s21)
-	(LOCATION s22)
-	(LOCATION s23)
-	(LOCATION s24)
-	(LOCATION p0-3)
-	(LOCATION p0-18)
-	(LOCATION p1-5)
-	(LOCATION p1-15)
-	(LOCATION p1-23)
-	(LOCATION p3-2)
-	(LOCATION p3-10)
-	(LOCATION p3-14)
-	(LOCATION p3-17)
-	(LOCATION p3-18)
-	(LOCATION p4-6)
-	(LOCATION p4-20)
-	(LOCATION p5-22)
-	(LOCATION p5-24)
-	(LOCATION p6-21)
-	(LOCATION p7-0)
-	(LOCATION p7-19)
-	(LOCATION p8-4)
-	(LOCATION p8-5)
-	(LOCATION p8-13)
-	(LOCATION p9-12)
-	(LOCATION p9-20)
-	(LOCATION p10-23)
-	(LOCATION p11-20)
-	(LOCATION p12-7)
-	(LOCATION p12-19)
-	(LOCATION p12-24)
-	(LOCATION p13-2)
-	(LOCATION p14-6)
-	(LOCATION p14-11)
-	(LOCATION p14-16)
-	(LOCATION p15-7)
-	(LOCATION p16-12)
-	(LOCATION p17-22)
-	(LOCATION p18-15)
-	(LOCATION p19-17)
-	(LOCATION p19-18)
-	(LOCATION p20-8)
-	(LOCATION p21-1)
-	(LOCATION p21-9)
-	(LOCATION p22-21)
-	(LOCATION p23-11)
-	(LOCATION p23-18)
-	(LOCATION p23-22)
-	(LOCATION p24-1)
 	(path s0 p0-3)
 	(path p0-3 s0)
 	(path s3 p0-3)

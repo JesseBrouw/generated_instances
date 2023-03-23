@@ -1,111 +1,69 @@
 (define (problem DLOG-1-3-12)
 	(:domain driverlog)
 	(:objects
-	driver1
-	truck1
-	truck2
-	truck3
-	package1
-	package2
-	package3
-	package4
-	package5
-	package6
-	package7
-	package8
-	package9
-	package10
-	package11
-	package12
-	s0
-	s1
-	s2
-	s3
-	s4
-	s5
-	s6
-	s7
-	s8
-	s9
-	p0-9
-	p1-2
-	p1-4
-	p2-6
-	p2-7
-	p2-8
-	p2-9
-	p3-5
-	p4-9
-	p5-0
-	p6-2
-	p6-9
-	p7-3
-	p8-3
-	p9-7
-	p9-8
+	driver1 - driver
+	truck1 - truck
+	truck2 - truck
+	truck3 - truck
+	package1 - obj
+	package2 - obj
+	package3 - obj
+	package4 - obj
+	package5 - obj
+	package6 - obj
+	package7 - obj
+	package8 - obj
+	package9 - obj
+	package10 - obj
+	package11 - obj
+	package12 - obj
+	s0 - location
+	s1 - location
+	s2 - location
+	s3 - location
+	s4 - location
+	s5 - location
+	s6 - location
+	s7 - location
+	s8 - location
+	s9 - location
+	p0-9 - location
+	p1-2 - location
+	p1-4 - location
+	p2-6 - location
+	p2-7 - location
+	p2-8 - location
+	p2-9 - location
+	p3-5 - location
+	p4-9 - location
+	p5-0 - location
+	p6-2 - location
+	p6-9 - location
+	p7-3 - location
+	p8-3 - location
+	p9-7 - location
+	p9-8 - location
 	)
 	(:init
 	(at driver1 s4)
-	(DRIVER driver1)
 	(at truck1 s9)
 	(empty truck1)
-	(TRUCK truck1)
 	(at truck2 s7)
 	(empty truck2)
-	(TRUCK truck2)
 	(at truck3 s2)
 	(empty truck3)
-	(TRUCK truck3)
 	(at package1 s1)
-	(OBJ package1)
 	(at package2 s7)
-	(OBJ package2)
 	(at package3 s0)
-	(OBJ package3)
 	(at package4 s5)
-	(OBJ package4)
 	(at package5 s7)
-	(OBJ package5)
 	(at package6 s9)
-	(OBJ package6)
 	(at package7 s0)
-	(OBJ package7)
 	(at package8 s0)
-	(OBJ package8)
 	(at package9 s4)
-	(OBJ package9)
 	(at package10 s7)
-	(OBJ package10)
 	(at package11 s9)
-	(OBJ package11)
 	(at package12 s1)
-	(OBJ package12)
-	(LOCATION s0)
-	(LOCATION s1)
-	(LOCATION s2)
-	(LOCATION s3)
-	(LOCATION s4)
-	(LOCATION s5)
-	(LOCATION s6)
-	(LOCATION s7)
-	(LOCATION s8)
-	(LOCATION s9)
-	(LOCATION p0-9)
-	(LOCATION p1-2)
-	(LOCATION p1-4)
-	(LOCATION p2-6)
-	(LOCATION p2-7)
-	(LOCATION p2-8)
-	(LOCATION p2-9)
-	(LOCATION p3-5)
-	(LOCATION p4-9)
-	(LOCATION p5-0)
-	(LOCATION p6-2)
-	(LOCATION p6-9)
-	(LOCATION p7-3)
-	(LOCATION p8-3)
-	(LOCATION p9-7)
-	(LOCATION p9-8)
 	(path s0 p0-9)
 	(path p0-9 s0)
 	(path s9 p0-9)
