@@ -1,0 +1,3 @@
+green,
+red,0,
+gold,0,
